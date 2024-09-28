@@ -1,3 +1,5 @@
+/* Default styles for desktop devices */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +7,7 @@ body {
     background-color: #333;
     color: #fff;
 }
+
 body::before {
     content: '';
     position: fixed;
@@ -19,6 +22,7 @@ body::before {
     z-index: -1;
     opacity: 0.2;
 }
+
 .portfolio-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -70,16 +74,17 @@ body::before {
     position: relative;
     margin-top: 20px;
 }
+
 h1 {
     font-size: 36px;
-  }
-  
-  h1 span {
+}
+
+h1 span {
     font-size: 24px;
     font-weight: normal;
     color: #efe8e8;
     display: block;
-  }
+}
 
 #home p {
     position: relative;
@@ -87,8 +92,8 @@ h1 {
     margin-top: 60px;
     text-align: left;
     z-index: 1;
-    color: white; 
-    width: 90%; /* Adjust width as needed */
+    color: white;
+    width: 90%;
 }
 
 #home video {
@@ -99,7 +104,7 @@ h1 {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: opacity(0.5); /* Add this line to set the opacity to 50% */
+    filter: opacity(0.5);
 }
 
 .home-content {
@@ -108,7 +113,7 @@ h1 {
     align-items: flex-start;
     position: relative;
     margin-top: 60px;
-    gap: 20px; /* Add this line to set the gap between the text and the profile picture */
+    gap: 20px;
 }
 
 .home-text {
@@ -125,12 +130,17 @@ h1 {
 }
 
 /* Add animation effect to the title, text, and profile picture when scrolling down */
-#home h1, .home-text, .profile-picture {
+
+#home h1,
+.home-text,
+.profile-picture {
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
 
-#home h1.fade-out, .home-text.fade-out, .profile-picture.fade-out {
+#home h1.fade-out,
+.home-text.fade-out,
+.profile-picture.fade-out {
     opacity: 0;
 }
 
@@ -209,7 +219,7 @@ i {
 .education-section {
     position: relative;
     padding: 20px;
-}
+ }
 
 .education-section video {
     position: absolute;
@@ -218,13 +228,13 @@ i {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7; /* 50% transparency */
-    z-index: -1; /* Add this line to move the video behind the content */
+    opacity: 0.7;
+    z-index: -1;
 }
 
 .education-container {
     position: relative;
-    z-index: 1; /* Add this line to bring the content on top of the video */
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,11 +288,12 @@ i {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    z-index: 1; /* Add this line to bring the title on top of the video */
+    z-index: 1;
     text-align: center;
 }
+
 /* Add this code to your CSS file */
-/* Add this code to your CSS file */
+
 .modal {
     display: none;
     position: fixed;
@@ -423,7 +434,7 @@ i {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left : 0;
     width: 100%;
     height: 100%;
     background-image: url('../images/contactback.jpg');
@@ -473,7 +484,8 @@ i {
     margin-bottom: 10px;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -519,16 +531,47 @@ button[type="submit"]:hover {
 /* Mobile Styles */
 
 @media only screen and (max-width: 768px) {
-    .experience-grid, .project-grid {
+    .experience-grid,
+    .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
     .contact-grid {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+    .home-content {
+        flex-direction: column;
+    }
+    .profile-picture {
+        width: 100%;
+        height: 300px;
+    }
+    .home-text {
+        margin-right: 0;
+    }
+    .education-grid {
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .experience-grid, .project-grid {
+    .experience-grid,
+    .project-grid {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .image-container {
+        flex-direction: column;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    .icon-container {
+        flex-direction: column;
+    }
+    .icon-container i {
+        margin: 10px 0;
     }
 }
