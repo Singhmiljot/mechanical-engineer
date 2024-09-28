@@ -1,0 +1,534 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.2;
+}
+.portfolio-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.top-nav {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav li {
+    margin-right: 20px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: #ccc;
+}
+
+#home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    padding-left: 20px;
+}
+
+#home h1 {
+    font-size: 74px;
+    position: relative;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 36px;
+  }
+  
+  h1 span {
+    font-size: 24px;
+    font-weight: normal;
+    color: #efe8e8;
+    display: block;
+  }
+
+#home p {
+    position: relative;
+    font-size: 25px;
+    margin-top: 60px;
+    text-align: left;
+    z-index: 1;
+    color: white; 
+    width: 90%; /* Adjust width as needed */
+}
+
+#home video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: opacity(0.5); /* Add this line to set the opacity to 50% */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 60px;
+    gap: 20px; /* Add this line to set the gap between the text and the profile picture */
+}
+
+.home-text {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.profile-picture {
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 2;
+    margin-right: 20px;
+}
+
+/* Add animation effect to the title, text, and profile picture when scrolling down */
+#home h1, .home-text, .profile-picture {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+#home h1.fade-out, .home-text.fade-out, .profile-picture.fade-out {
+    opacity: 0;
+}
+
+#about {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.about-me-section {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.305);
+}
+
+.text-container {
+    padding: 20px;
+    position: relative;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 45%;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+i {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.education-section {
+    position: relative;
+    padding: 20px;
+}
+
+.education-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* 50% transparency */
+    z-index: -1; /* Add this line to move the video behind the content */
+}
+
+.education-container {
+    position: relative;
+    z-index: 1; /* Add this line to bring the content on top of the video */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+.education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-image {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.education-info {
+    padding: 20px;
+}
+
+.education-info h3 {
+    margin-top: 0;
+}
+
+.education-info p {
+    margin-bottom: 20px;
+}
+
+.education-item a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.education-item a:hover {
+    color: #23527c;
+}
+
+.education-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    z-index: 1; /* Add this line to bring the title on top of the video */
+    text-align: center;
+}
+/* Add this code to your CSS file */
+/* Add this code to your CSS file */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    color: #000;
+    overflow: auto;
+}
+
+.close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.learn-more-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: #3e8e41;
+}
+
+#experience {
+    padding: 20px;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.experience {
+    background-color: #ffffff35;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.experience-info {
+    padding: 20px;
+}
+
+.experience-info h3 {
+    margin-top: 0;
+}
+
+.experience-info p {
+    margin-bottom: 20px;
+}
+
+#projects {
+    padding: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project {
+    background-color: #ffffff4a;
+    padding: 20px;
+    border: 1px solid #dddddd4b;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    margin-top: 0;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.project-link:hover {
+    color: #23527c;
+}
+
+#contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/contactback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+#contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-image: url('../images/contactback.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-info {
+    padding: 20px;
+    width: 40%;
+}
+
+.contact-form {
+    padding: 20px;
+    width: 60%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #23527c;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background-color: #23527c;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 768px) {
+    .experience-grid, .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .experience-grid, .project-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
