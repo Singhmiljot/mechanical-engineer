@@ -41,7 +41,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 0;
+    gap: 10px;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -53,12 +53,14 @@ body {
     border: none;
     border-radius: 0;
     box-shadow: none;
+    overflow: hidden;
+    position: relative;
 }
 
 .project6-box img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 0;
 }
 
@@ -75,11 +77,39 @@ body {
     color: #fff;
 }
 
+.project6-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
 /* Mobile Styles */
 
 @media only screen and (max-width: 768px) {
     .project6-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
     .project6-box {
         margin-bottom: 20px;
@@ -89,6 +119,7 @@ body {
 @media only screen and (max-width: 480px) {
     .project6-grid {
         grid-template-columns: repeat( 1, 1fr);
+        gap: 10px;
     }
     .project6-box {
         margin-bottom: 20px;
