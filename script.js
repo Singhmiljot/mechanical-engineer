@@ -100,3 +100,9 @@ window.onclick = function(event) {
         modal2.style.display = "none";
     }
 }
+function goBack() {
+    window.history.back();
+}
+function openResume() {
+    window.open("Miljot_Singh_Gambhir_CV.pdf.pdf", "_blank");
+}
