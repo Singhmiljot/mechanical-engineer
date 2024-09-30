@@ -522,7 +522,6 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    z-index: 1000;
 }
 
 .back-to-top:hover {
@@ -671,5 +670,16 @@ button[type="submit"]:hover {
     }
     button[type="submit"] {
         padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .image-container {
+        display: block;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        margin: 10px;
     }
 }
