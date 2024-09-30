@@ -522,6 +522,7 @@ button[type="submit"]:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 1000;
 }
 
 .back-to-top:hover {
