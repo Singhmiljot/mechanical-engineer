@@ -34,7 +34,7 @@ body {
 }
 
 /* Container for images */
-.project1-grid {
+.project2-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Ensures space between images */
@@ -43,7 +43,7 @@ body {
     margin: 0;
 }
 
-.project1-box {
+.project2-box {
     flex: 1 1 calc(50% - 10px); /* Each box takes up 50% width with space for gaps */
     background-color: #fff;
     padding: 0;
@@ -56,14 +56,14 @@ body {
     max-width: calc(50% - 10px); /* Ensures two boxes align side by side */
 }
 
-.project1-box img {
-    width: 100%;
-    height: auto;
+.project2-box img {
+    width: 100;
+    height: 50;
     object-fit: contain; /* Keeps image within the container */
     border-radius: 0;
 }
 
-.project1-box h4 {
+.project2-box h4 {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
@@ -76,7 +76,7 @@ body {
     color: #fff;
 }
 
-.project1-title {
+.project2-title {
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -87,6 +87,18 @@ body {
     background-color: #fff;
     width: 100%;
     text-align: centre;
+}
+
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .back-to-home {
@@ -121,6 +133,14 @@ body {
     right: 20px;
 }
 
+.back-button.left {
+    left: 20px;
+}
+
+.back-button.right {
+    right: 20px;
+}
+
 .back-button:hover {
     background-color: #444;
 }
@@ -128,14 +148,14 @@ body {
 /* Mobile Styles */
 
 @media only screen and (max-width: 768px) {
-    .project1-box {
+    .project2-box {
         flex: 1 1 100%; /* Each box takes up full width on smaller screens */
         max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 480px) {
-    .project1-box {
+    .project2-box {
         flex: 1 1 100%; /* Ensures single-column layout for very small screens */
         max-width: 100%;
     }
