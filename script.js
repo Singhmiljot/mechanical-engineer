@@ -106,3 +106,12 @@ function goBack() {
 function openResume() {
     window.open("Miljot_Singh_Gambhir_CV.pdf.pdf", "_blank");
 }
+const backToTopButton = document.querySelector('.back-button');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});

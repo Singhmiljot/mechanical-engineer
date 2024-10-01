@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.top-nav {
+    background-color: #444;
+    padding: 1em;
+    text-align: center;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav li {
+    margin-right: 20px;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-nav a:hover {
+    color: #ccc;
+}
+
+/* Container for images */
+.project1-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensures space between images */
+    gap: 5px; /* Adjusts gap between images */
+    padding: 10px;
+    margin: 0;
+}
+
+.project1-box {
+    flex: 1 1 calc(50% - 10px); /* Each box takes up 50% width with space for gaps */
+    background-color: #fff;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    max-width: calc(50% - 10px); /* Ensures two boxes align side by side */
+}
+
+.project1-box img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Keeps image within the container */
+    border-radius: 0;
+}
+
+.project1-box h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.project1-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    padding: 10px;
+    background-color: #fff;
+    width: 100%;
+    text-align: centre;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #444;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 768px) {
+    .project1-box {
+        flex: 1 1 100%; /* Each box takes up full width on smaller screens */
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project1-box {
+        flex: 1 1 100%; /* Ensures single-column layout for very small screens */
+        max-width: 100%;
+    }
+}
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.back-button.show {
+    display: block;
+}

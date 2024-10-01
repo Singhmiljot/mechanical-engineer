@@ -443,15 +443,14 @@ i {
     background-position: cover;
     opacity: 0.9; /* adjust the opacity as needed */
     transition: opacity 0.5s; /* add a transition effect */
+    border-radius: 10px; /* add a border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow */
 }
 
 .project-image:hover {
     opacity: 1; /* change the opacity on hover */
 }
-.project-image {
-    border-radius: 10px; /* add a border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow */
-}
+
 .project-info {
     padding: 20px;
 }
@@ -471,19 +470,6 @@ i {
 
 .project-link:hover {
     background-color: #3e8e41; /* change the background color on hover */
-}
-.project1-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
-.project1-image {
-    height: 200px; /* adjust the height as needed */
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px; /* add a border radius */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a box shadow */
 }
 #contact {
     padding: 20px;
