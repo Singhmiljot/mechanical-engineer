@@ -150,9 +150,11 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#about video {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #about video {
     position: absolute;
     top: 0;
     left: 0;
@@ -160,61 +162,127 @@ h1 span {
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
-}
-
-.about-me-section {
+    z-index: -1;
+  }
+  
+  .about-me-section {
     position: relative;
     z-index: 1;
-}
-
-.overlay {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.305);
-}
-
-.text-container {
+    z-index: -1;
+  }
+  
+  .text-container {
     padding: 20px;
     position: relative;
-}
-
-.about-title {
+  }
+  
+  .about-title {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.image-container {
+  }
+  
+  .image-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-.image-container img {
+  }
+  
+  .image-container img {
     width: 45%;
     height: 200px;
     object-fit: scale-down;
     border-radius: 10px;
-}
-
-.icon-container {
+  }
+  
+  .icon-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-}
-
-i {
+  }
+  
+  i {
     font-size: 24px;
     margin: 10px;
-}
+  }
+  
+  .learn-more-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    height: 90%;
+    color: #000;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    margin: 20px auto;
+  }
+  
+  .modal-content::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .close {
+    color: #000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .education-section {
     position: relative;

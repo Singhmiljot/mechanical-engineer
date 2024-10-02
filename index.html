@@ -43,138 +43,146 @@
                 </div>
             </section>
 
-            <section id="about">
-                <video autoplay loop muted>
-                    <source src="images/aboutback.mp4" type="video/mp4">
-                </video>
+            <div id="about">
+                <video src="images\About\aboutback.mp4" autoplay loop muted></video>
                 <div class="about-me-section">
-                    <div class="overlay"></div>
-                    <div class="text-container">
-                        <h2>About me</h2>
-                        <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.
-                            I am passionate about advancing the field of engineering, constantly learning new skills and exploring side projects to stay at the cutting edge of technology. My experience spans both academia and industry, where I’ve worked on individual and team-based projects, solving diverse and complex problems. My focus lies in remote handling systems, precision tooling, and automated robotics, which allows me to create efficient, sustainable systems that have a real-world impact.
-                            I invite you to explore my portfolio to learn more about my projects and experience. Please don’t hesitate to reach out if you have any questions or would like to discuss potential collaborations.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="images/image(About)1.jpg" alt="Image 1">
-                        <img src="images/image(About)2.jpg" alt="Image 2">
-                    </div>
-                    <div class="icon-container">
-                        <i class="fas fa-user"></i>
-                    </div>
+                  <div class="overlay"></div>
+                  <div class="text-container">
+                    <h2 class="about-title">About Me</h2>
+                    <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.</p>
+                  </div>
+                  <div class="image-container">
+                    <img src="images\About\image(About)1.jpg" alt="Image 1">
+                    <img src="images\About\image(About)2.jpg" alt="Image 2">
+                    <button id="learn-more-btn-about" class="learn-more-btn">Know More</button>
+                  </div>
+                  <div class="icon-container">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-linkedin"></i>
+                  </div>
                 </div>
+              </div>
+              <!-- The modal window -->
+              <div class="modal" id="about-modal">
+                <div class="modal-content">
+                  <span id="close-about" class="close">&times;</span>
+                  <h2>About Me</h2>
+                  <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.</p>
+                </div>
+              </div>
             </section>
 
-            <!-- Education Section -->
-            <section id="education" class="education-section">
-                <!-- Background Video -->
-                <div class="video-background">
-                    <video autoplay loop muted>
-                        <source src="images/educationback.mp4" type="video/mp4">
-                    </video>
-                </div>
-
-                <!-- Education Content -->
-                <div class="education-container">
-                    <h2 class="education-title">Education</h2>
-                    <div class="education-grid">
-                        <!-- Bachelor of Engineering -->
-                        <div class="education-item">
-                            <div class="education-image" style="background-image: url('images/education1.jpg');"></div>
-                            <div class="education-info">
-                                <h3>Bachelor of Technology in Mechanical Engineering</h3>
-                                <p>Dehradun Institute of Technology, India</p>
-                                <p>2018 - 2022</p>
- </div>
-                            <button class="learn-more-btn">Learn More</button>
-                            <!-- Modal for Bachelor -->
-                            <div class="modal" id="education-modal">
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <h1>Bachelor of Technology in Mechanical Engineering</h1>
-                                    <p>Dehradun Institute of Technology, India</p>
-                                    <p>2018 - 2022</p>
-                                    <div class="education-description">
-                                        <h2>Description</h2>
-                                        <p>During my undergraduate studies, I acquired a robust foundation in mechanical and automotive engineering, focusing on the design, analysis, and application of engineering principles to automotive systems. My coursework encompassed core mechanical engineering subjects alongside specialised modules on automobile engineering, automotive system integration, and mechanical analysis.</p>
-                                    </div>
-                                    <div class="education-learnings">
-                                        <h2>Learnings</h2>
-                                        <ul> 
-                                          <li>Developed proficiency in CAD software like AutoCAD and SolidWorks, enhancing my skills in 3D modelling, simulations, and mechanical system designs.</li>
-                                            
-                                          <li>Gained a solid understanding of automotive engineering principles, enabling me to effectively analyse and improve vehicle performance, safety, and efficiency.</li>
-                                          
-                                          <li>Acquired hands-on experience in automotive system integration, learning how to optimise the performance of various mechanical systems within automobiles.</li>
-                                          
-                                          <li>Built a foundation in project management and teamwork through participation in Formula Student competitions, honing my ability to manage engineering projects, collaborate with cross-functional teams, and deliver solutions in fast-paced, competitive environments.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-accomplishments">
-                                        <h2>Accomplishments</h2>
-                                        <ul>
-                                            <li>Formula Student Competition: Actively contributed to DIT Motoracing, the university's Formula Student team, where I worked on refining the braking system of a Formula-1-style car. This experience improved my understanding of high-performance vehicle dynamics and teamwork, fostering a passion for automotive innovation.</li>
-                                           
-                                            <li>Capstone Projects: Completed several design and analysis projects, including the development of a lightweight multifunction hand trolley, where I applied design for manufacturability (DFM) principles and finite element analysis (FEA) to improve durability and efficiency. These projects deepened my expertise in practical engineering applications and advanced simulation tools.</li>
-                                           
-                                            <li>Robo Wars Competition: Actively participated in the university’s annual Robo Wars competition, where I led the design and construction of a high-impact combat robot. This project enhanced my expertise in mechanical design, power transmission, and structural integrity, while refining my problem-solving abilities under pressure. The experience further developed my leadership and teamwork skills, fostering a deeper interest in innovative engineering solutions.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-images">
-                                        <img src="../images/image(edu)1.jpg" alt="Image 1">
-                                        <img src="../images/image(edu)2.jpg" alt="Image 2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Master of Science -->
-                        <div class="education-item">
-                            <div class="education-image" style="background-image: url('images/education2.jpg');"></div>
-                            <div class="education-info">
-                                <h3>Master of Science in Advanced Mechanical Engineering</h3>
-                                <p>University of Sheffield, United Kingdom</p>
-                                <p>2023 - 2024</p>
-                            </div>
-                            <button class="learn-more-btn">Learn More</button>
-                            <!-- Modal for Master -->
-                            <div class="modal" id="education-modal-2">
-                                <div class="modal-content">
-                                    <span class="close">&times;</span>
-                                    <h1>Master of Science in Advanced Mechanical Engineering</h1>
-                                    <p>University of Sheffield, United Kingdom</p>
-                                    <p>2023 - 2024</p>
-                                    <div class="education-description">
-                                        <h2>Description</h2>
-                                        <p>This programme provided a comprehensive understanding of advanced mechanical engineering principles, with a focus on finite element analysis (FEA), solid modelling, fluid dynamics, and design optimisation. I gained hands-on experience in utilising simulation tools like ANSYS and SolidWorks, applying engineering techniques to solve complex problems across various industries.</p>
-                                    </div>
-                                    <div class="education-learnings">
-                                        <h2>Learnings</h2>
-                                        <ul>
-                                            <li>Acquired in-depth knowledge of FEA and CFD (Computational Fluid Dynamics) to analyse and optimise complex mechanical systems.</li>
-                                            <li>Developed advanced skills in mechanical design, solid modelling, and fluid dynamics for real-world applications.</li>
-                                            <li>Conducted comprehensive research on horizontal wind turbine optimisation, demonstrating proficiency in advanced simulation, CFD analysis, and sustainable engineering practices.</li>
-                                            <li>Gained expertise in design optimisation techniques, ensuring designs meet performance, efficiency, and sustainability criteria.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-accomplishments">
-                                        <h2>Accomplishments</h2>
-                                        <ul>
-                                            <li>Dissertation on Horizontal Wind Turbine Optimisation: Researched and developed optimisation techniques for wind turbine blade design, improving aerodynamic performance and power efficiency by 10%. Utilised CFD simulations and FEA in ANSYS to validate design improvements, showcasing expertise in renewable energy technologies and advanced mechanical systems.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-images">
-                                        <img src="images/education2-image1.jpg" alt="Image 1">
-    <video width="100%" height="400" controls>
-        <source src="images/Blade - Made with Clipchamp.mp4" type="video/mp4">
+     <!-- Education Section -->
+<section id="education" class="education-section">
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay loop muted>
+      <source src="images\education\educationback.mp4" type="video/mp4">
     </video>
-</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+  </div>
+
+  <!-- Education Content -->
+  <div class="education-container">
+    <h2 class="education-title">Education</h2>
+    <div class="education-grid">
+      <!-- Bachelor of Engineering -->
+      <div class="education-item">
+        <div class="education-image" style="background-image: url('images/education1.jpg');"></div>
+        <div class="education-info">
+          <h3>Bachelor of Technology in Mechanical Engineering</h3>
+          <p>Dehradun Institute of Technology, India</p>
+          <p>2018 - 2022</p>
+        </div>
+        <button id="learn-more-btn-bachelor" class="learn-more-btn">Learn More</button>
+        <!-- Modal for Bachelor -->
+        <div class="modal" id="education-modal">
+          <div class="modal-content">
+            <span id="close-bachelor" class="close">&times;</span>
+            <h1>Bachelor of Technology in Mechanical Engineering</h1>
+            <p>Dehradun Institute of Technology, India</p>
+            <p>2018 - 2022</p>
+            <div class="education-description">
+              <h2>Description</h2>
+              <p>During my undergraduate studies, I acquired a robust foundation in mechanical and automotive engineering, focusing on the design, analysis, and application of engineering principles to automotive systems. My coursework encompassed core mechanical engineering subjects alongside specialised modules on automobile engineering, automotive system integration, and mechanical analysis.</p>
+            </div>
+            <div class="education-learnings">
+              <h2>Learnings</h2>
+              <ul> 
+                <li>Developed proficiency in CAD software like AutoCAD and SolidWorks, enhancing my skills in 3D modelling, simulations, and mechanical system designs.</li>
+                
+                <li>Gained a solid understanding of automotive engineering principles, enabling me to effectively analyse and improve vehicle performance, safety, and efficiency.</li>
+                
+                <li>Acquired hands-on experience in automotive system integration, learning how to optimise the performance of various mechanical systems within automobiles.</li>
+                
+                <li>Built a foundation in project management and teamwork through participation in Formula Student competitions, honing my ability to manage engineering projects, collaborate with cross-functional teams, and deliver solutions in fast-paced, competitive environments.</li>
+              </ul>
+            </div>
+            <div class="education-accomplishments">
+              <h2>Accomplishments</h2>
+              <ul>
+                <li>Formula Student Competition: Actively contributed to DIT Motoracing, the university's Formula Student team, where I worked on refining the braking system of a Formula-1-style car. This experience improved my understanding of high-performance vehicle dynamics and teamwork, fostering a passion for automotive innovation.</li>
+                
+                <li>Capstone Projects: Completed several design and analysis projects, including the development of a lightweight multifunction hand trolley, where I applied design for manufacturability (DFM) principles and finite element analysis (FEA) to improve durability and efficiency. These projects deepened my expertise in practical engineering applications and advanced simulation tools.</li>
+                
+                <li>Robo Wars Competition: Actively participated in the university’s annual Robo Wars competition, where I led the design and construction of a high-impact combat robot. This project enhanced my expertise in mechanical design, power transmission, and structural integrity, while refining my problem-solving abilities under pressure. The experience further developed my leadership and teamwork skills, fostering a deeper interest in innovative engineering solutions.</li>
+              </ul>
+            </div>
+            <div class="education-images">
+              <img src="images\education\image(edu)1.jpg" alt="Image 1">
+              <img src="images\education\image(edu)2.jpg" alt="Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Master of Science -->
+      <div class="education-item">
+        <div class="education-image" style="background-image: url('images/education2.jpg');"></div>
+        <div class="education-info">
+          <h3>Master of Science in Advanced Mechanical Engineering</h3>
+          <p>University of Sheffield, United Kingdom</p>
+          <p>2023 - 2024</p>
+        </div>
+        <button id="learn-more-btn-master" class="learn-more-btn">Learn More</button>
+        <!-- Modal for Master -->
+        <div class="modal" id="education-modal-2">
+          <div class="modal-content">
+            <span id="close-master" class="close">&times;</span>
+            <h1>Master of Science in Advanced Mechanical Engineering</h1>
+            <p>University of Sheffield, United Kingdom</p>
+            <p>2023 - 2024</p>
+            <div class="education-description">
+              <h2>Description</h2>
+              <p>This programme provided a comprehensive understanding of advanced mechanical engineering principles, with a focus on finite element analysis (FEA), solid modelling, fluid dynamics, and design optimisation. I gained hands-on experience in utilising simulation tools like ANSYS and SolidWorks, applying engineering techniques to solve complex problems across various industries.</p>
+            </div>
+            <div class="education-learnings">
+              <h2>Learnings</h2>
+              <ul>
+                <li>Acquired in-depth knowledge of FEA and CFD (Computational Fluid Dynamics) to analyse and optimise complex mechanical systems.</li>
+                <li>Developed advanced skills in mechanical design, solid modelling, and fluid dynamics for real-world applications.</li>
+                <li>Conducted comprehensive research on horizontal wind turbine optimisation, demonstrating proficiency in advanced simulation, CFD analysis, and sustainable engineering practices.</li>
+                <li>Gained expertise in design optimisation techniques, ensuring designs meet performance, efficiency, and sustainability criteria.</li>
+              </ul>
+            </div>
+            <div class="education-accomplishments">
+              <h2>Accomplishments</h2>
+              <ul>
+                <li>Dissertation on Horizontal Wind Turbine Optimisation: Researched and developed optimisation techniques for wind turbine blade design, improving aerodynamic performance and power efficiency by 10%. Utilised CFD simulations and FEA in ANSYS to validate design improvements, showcasing expertise in renewable energy technologies and advanced mechanical systems.</li>
+              </ul>
+            </div>
+            <div class="education-images">
+              <img src="images/education2-image1.jpg" alt="Image 1">
+              <video width="100%" height="400" controls>
+                <source src="images/Blade - Made with Clipchamp.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
             <section id="experience">
                 <h2>Experience</h2>
