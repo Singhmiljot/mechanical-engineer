@@ -471,6 +471,7 @@ i {
 .project-link:hover {
     background-color: #3e8e41; /* change the background color on hover */
 }
+
 #contact {
     padding: 20px;
     display: flex;
