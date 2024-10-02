@@ -42,8 +42,17 @@ body {
     padding: 10px;
     margin: 0;
 }
+.project1-image1 {
+    height: 250px; /* adjust the height to your liking */
+    width: auto; /* maintain the aspect ratio */
+  }
+  
+  .project1-image2 {
+    height: 150px; /* adjust the height to your liking */
+    width: auto; /* maintain the aspect ratio */
+  }
 
-.project1-box {
+  .project1-box {
     flex: 1 1 calc(50% - 10px); /* Each box takes up 50% width with space for gaps */
     background-color: #fff;
     padding: 0;
@@ -53,8 +62,9 @@ body {
     overflow: hidden;
     position: relative;
     height: auto;
-    max-width: calc(50% - 10px); /* Ensures two boxes align side by side */
-}
+    max-width: 300px; /* add a maximum width property */
+  }
+  
 
 .project1-box img {
     width: 100%;

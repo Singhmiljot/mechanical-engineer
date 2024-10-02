@@ -41,9 +41,10 @@ body {
     gap: 5px; /* Adjusts gap between images */
     padding: 10px;
     margin: 0;
-}
-
-.project2-box {
+    background-color: #000; /* add a plain black color background */
+  }
+  
+  .project2-box {
     flex: 1 1 calc(50% - 10px); /* Each box takes up 50% width with space for gaps */
     background-color: #fff;
     padding: 0;
@@ -53,17 +54,17 @@ body {
     overflow: hidden;
     position: relative;
     height: auto;
-    max-width: calc(50% - 10px); /* Ensures two boxes align side by side */
-}
-
-.project2-box img {
+    max-width: 300px;
+  }
+  
+  .project2-box img {
     width: 100%;
-    height: auto;
+    height: 250px; /* adjust the height to your liking */
     object-fit: contain; /* Keeps image within the container */
     border-radius: 0;
-}
-
-.project2-box h4 {
+  }
+  
+  .project2-box h4 {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
@@ -74,9 +75,9 @@ body {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-}
-
-.project2-title {
+  }
+  
+  .project2-title {
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -87,7 +88,7 @@ body {
     background-color: #fff;
     width: 100%;
     text-align: centre;
-}
+  }
 
 .back-to-home {
     position: fixed;

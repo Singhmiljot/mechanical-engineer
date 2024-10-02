@@ -171,7 +171,7 @@ h1 span {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
@@ -201,7 +201,7 @@ h1 span {
   .image-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top:20px;
   }
   
   .image-container img {
@@ -402,8 +402,9 @@ h1 span {
     justify-content: left;
     align-items: left;
     max-height: 100vh;
-    overflow-y: auto;
+    overflow-y: auto ;
     scrollbar-width: none;
+    margin: 20px auto;
 }
 
 .modal-content::-webkit-scrollbar {
@@ -584,7 +585,7 @@ h1 span {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity : 0.4;
     z-index: -1;
 }
 
@@ -796,7 +797,7 @@ button[type="submit"]:hover {
         background-size: cover;
     }
     .contact-info {
-        padding: 10px;
+        padding: 10 px;
     }
     .contact-form {
         padding: 10px;
