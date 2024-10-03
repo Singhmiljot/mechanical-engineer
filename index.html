@@ -22,13 +22,14 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="#" onclick="openResume()">View Resume</a></li>
+                        <li><button id="view-resume-btn">View Resume</button></li>
                     </ul>
                 </div>
             </nav>
         </header>
 
         <main>
+            <!-- Rest of your HTML code remains the same -->
             <section id="home">
                 <video autoplay loop muted>
                     <source src="images/homeback.mp4" type="video/mp4">
@@ -43,32 +44,46 @@
                 </div>
             </section>
 
-            <div id="about">
-                <video src="images\About\aboutback.mp4" autoplay loop muted></video>
-                <div class="about-me-section">
-                  <div class="overlay"></div>
-                  <div class="text-container">
-                    <h2 class="about-title">About Me</h2>
-                    <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.</p>
-                  </div>
-                  <div class="image-container">
-                    <img src="images\About\image(About)1.jpg" alt="Image 1">
-                    <img src="images\About\image(About)2.jpg" alt="Image 2">
-                    <button id="learn-more-btn-about" class="learn-more-btn">Know More</button>
-                  </div>
-                  <div class="icon-container">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-linkedin"></i>
-                  </div>
-                </div>
-              </div>
-              <!-- The modal window -->
+<!-- About section -->
+<div id="about">
+  <video src="images\About\aboutback.mp4" autoplay loop muted></video>
+  <div class="about-me-section">
+    <div class="overlay">
+      <div class="quote-container">
+        <h2 class="quote">"The best way to predict the future is to invent it."</h2>
+        <p class="quote-author">- Alan Kay</p>
+        <h2 class="about-title">About Me</h2>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.</p>
+    </div>
+    <div class="image-container">
+      <img src="images\About\image(About)1.jpg" alt="Image 1">
+      <img src="images\About\image(About)2.jpg" alt="Image 2">
+      <button id="learn-more-btn-about" class="learn-more-btn">Know More</button>
+    </div>
+    <div class="icon-container">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </div>
+</div>
+
+<!-- The about modal window -->
 <div class="modal" id="about-modal" style="display: none;">
   <div class="modal-content">
     <span id="close-about" class="close">&times;</span>
     <h2>About Me</h2>
     <p>As a Mechanical Design Engineer, I focus on creating innovative solutions for complex challenges, with a specialisation in CAD, FEA, and product development. My expertise extends across industries such as manufacturing and nuclear technology, where I design electro-mechanical systems and develop bespoke machinery for hazardous environments. I hold a strong belief in a human-centred approach to engineering, ensuring that the end-user's needs are always at the forefront of my designs.</p>
+    <h3>Interests</h3>
+    <ul>
+      <li>Reading: I enjoy reading books on history, science, and philosophy</li>
+      <li>Music: I play the guitar and enjoy listening to classical and rock music</li>
+      <li>Travel: I love exploring new places and experiencing different cultures</li>
+      <li>Outdoor activities: I enjoy hiking, camping, and playing sports</li>
+    </ul>
   </div>
 </div>
 
@@ -94,7 +109,7 @@
           <p>2018 - 2022</p>
         </div>
         <button id="learn-more-btn-bachelor" class="learn-more-btn">Learn More</button>
-       <!-- Modal for Bachelor -->
+    <!-- Modal for Bachelor -->
 <div class="modal" id="education-modal" style="display: none;">
   <div class="modal-content">
     <span id="close-bachelor" class="close">&times;</span>
@@ -144,7 +159,7 @@
           <p>2023 - 2024</p>
         </div>
         <button id="learn-more-btn-master" class="learn-more-btn">Learn More</button>
-      <!-- Modal for Master -->
+     <!-- Modal for Master -->
 <div class="modal" id="education-modal-2" style="display: none;">
   <div class="modal-content">
     <span id="close-master" class="close">&times;</span>
@@ -310,8 +325,7 @@
                         <p><strong>Name:</strong> Miljot Singh Gambhir</p>
                         <p><strong>Email:</strong> <a href="mailto:miljotsinghgambhir@gmail.com">miljotsinghgambhir@gmail.com</a></p>
                         <p><strong>Phone:</strong> <a href="tel:+447984304616">+44 7984304616</a></p>
-                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miljotsinghgambhir/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
-                    </div>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miljotsinghgambhir/" target="_blank">Miljot Singh Gambhir</a></p>                    </div>
                     <div class="contact-form">
                         <h3>Send a Message</h3>
                         <form action="https://formspree.io/f/mkgwleod" method="POST">

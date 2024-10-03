@@ -154,6 +154,35 @@ h1 span {
     background-position: center;
   }
   
+  .quote-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+  }
+  
+  .quote {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .quote-author {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
   #about video {
     position: absolute;
     top: 0;
@@ -174,6 +203,7 @@ h1 span {
     background-color: rgba(255, 255, 255, 0.);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90vh;
   }
   
   .overlay {
@@ -189,6 +219,7 @@ h1 span {
   .text-container {
     padding: 20px;
     position: relative;
+    margin-top: 200px;
   }
   
   .about-title {
@@ -572,6 +603,8 @@ h1 span {
     flex-direction: column;
     align-items: center;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.5); /* add a background color */
+    color: #333; /* add a text color */
 }
 
 #contact::before {
@@ -581,25 +614,18 @@ h1 span {
     left : 0;
     width: 100%;
     height: 100%;
-    background-image: url('../images/contactback.jpg');
+    background-image: url('images/Contact/contactback.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity : 0.4;
+    opacity : 0.8;
     z-index: -1;
 }
 
-#contact {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    background-image: url('../images/contactback.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: multiply;
-    background-color: rgba(255, 255, 255, 0.5);
+#contact-info {
+    color: #333; /* change the text color to a darker color */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a text shadow to improve visibility */
+    z-index: 1; /* add a z-index to bring the text to the front */
 }
 
 .contact-grid {
@@ -612,6 +638,10 @@ h1 span {
 .contact-info {
     padding: 20px;
     width: 40%;
+}
+
+.contact-info a {
+    color: #337ab7; /* or any other color you prefer */
 }
 
 .contact-form {
