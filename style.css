@@ -152,9 +152,9 @@ h1 span {
     align-items: center;
     background-size: cover;
     background-position: center;
-  }
-  
-  .quote-container {
+}
+
+.quote-container {
     position: absolute;
     top: 0;
     left: 50%;
@@ -162,28 +162,28 @@ h1 span {
     text-align: center;
     padding: 20px;
     z-index: 1;
-  }
-  
-  .quote {
+}
+
+.quote {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-  }
-  
-  .quote-author {
+}
+
+.quote-author {
     font-size: 18px;
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  .about-title {
+}
+
+.about-title {
     font-size: 36px;
     font-weight: bold;
     color: #fff;
     margin-bottom: 20px;
-  }
-  
-  #about video {
+}
+
+#about video {
     position: absolute;
     top: 0;
     left: 0;
@@ -192,9 +192,9 @@ h1 span {
     object-fit: cover;
     opacity: 0.8;
     z-index: -1;
-  }
-  
-  .about-me-section {
+}
+
+.about-me-section {
     position: relative;
     z-index: 1;
     width: 80%;
@@ -204,9 +204,9 @@ h1 span {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 90vh;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -214,46 +214,49 @@ h1 span {
     height: 100%;
     background-color: rgba(255, 255, 255, 0.305);
     z-index: -1;
-  }
-  
-  .text-container {
+}
+
+.text-container {
     padding: 20px;
     position: relative;
-    margin-top: 200px;
-  }
-  
-  .about-title {
+    margin-top: 100px; /* reduced margin-top to 100px */
+}
+
+.about-title {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .image-container {
+}
+
+.image-container {
     display: flex;
-    justify-content: space-between;
-    margin-top:20px;
-  }
-  
-  .image-container img {
+    flex-wrap: wrap; /* added flex-wrap: wrap */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
     width: 45%;
     height: 200px;
     object-fit: scale-down;
     border-radius: 10px;
-  }
-  
-  .icon-container {
+    margin: 10px; /* added margin: 10px */
+}
+
+.icon-container {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap; /* added flex-wrap: wrap */
+    justify-content: center;
     margin-top: 20px;
-  }
-  
-  i {
+}
+
+i {
     font-size: 24px;
     margin: 10px;
-  }
-  
-  .learn-more-btn {
+}
+
+.learn-more-btn {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
@@ -262,13 +265,13 @@ h1 span {
     cursor: pointer;
     margin: 20px auto;
     display: block;
-  }
-  
-  .learn-more-btn:hover {
+}
+
+.learn-more-btn:hover {
     background-color: #3e8e41;
-  }
-  
-  .modal {
+}
+
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -277,9 +280,9 @@ h1 span {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-  }
-  
-  .modal-content {
+}
+
+.modal-content {
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
@@ -295,11 +298,60 @@ h1 span {
     overflow-y: auto;
     scrollbar-width: none;
     margin: 20px auto;
-  }
-  
-  .modal-content::-webkit-scrollbar {
+}
+
+.modal-content::-webkit-scrollbar {
     display: none;
-  }
+}
+.text-container {
+    padding: 20px;
+    position: relative;
+    margin-top: 150px; /* increased margin-top to 150px */
+}
+
+/* added media queries to make the layout more responsive */
+
+@media only screen and (max-width: 768px) {
+    .about-me-section {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .text-container {
+        margin-top: 50px;
+    }
+    .image-container img {
+        width: 100%;
+        margin: 10px;
+    }
+    .icon-container {
+        flex-direction: column;
+    }
+    i {
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-me-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .text-container {
+        margin-top: 20px;
+    }
+    .image-container img {
+        width: 100%;
+        margin: 10px;
+    }
+    .icon-container {
+        flex-direction: column;
+    }
+    i {
+        font-size: 14px;
+        margin: 10px;
+    }
+}
   
   .close {
     color: #000;
