@@ -458,6 +458,14 @@ i {
     z-index: 1;
     text-align: center;
 }
+@media (max-width: 768px) {
+    .education-images img {
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      margin: 10px;
+    }
+  }
 
 /* Add this code to your CSS file */
 
