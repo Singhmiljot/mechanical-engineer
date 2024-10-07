@@ -38,100 +38,37 @@ body {
 }
 
 .project6-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project6-box {
-    background-color: #fff;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: hidden;
-    position: relative;
-}
-
-.project6-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    border-radius: 0;
+    margin: 10px;
+    width: calc(33 .33% - 20px);
 }
 
 .project6-box h4 {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
 }
 
-.project6-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    padding: 10px;
-    background-color: #fff;
-    width: 100%;
-    text-align: center;
-}
-.back-button {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.back-button:hover {
-    background-color: #444;
-}
-/* Mobile Styles */
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width:768px) {
     .project6-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        flex-direction: column;
     }
     .project6-box {
-        margin-bottom: 20px;
-    }
-    .project6-box img {
         width: 100%;
-        height: auto;
-        object-fit: contain;
     }
 }
+
 
 @media only screen and (max-width: 480px) {
     .project6-grid {
-        grid-template-columns: repeat( 1, 1fr);
-        gap: 10px;
+        flex-direction: column;
     }
     .project6-box {
-        margin-bottom: 20px;
-    }
-    .project6-box img {
         width: 100%;
-        height: auto;
-        object-fit: contain;
     }
 }
