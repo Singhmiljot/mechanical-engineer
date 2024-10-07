@@ -412,7 +412,7 @@ i {
 }
 
 .education-images img {
-    width: 80%;
+    width: 60%;
     height: 400px;
     object-fit: scale-down;
     border-radius: 10px;
@@ -459,10 +459,12 @@ i {
     text-align: center;
 }
 @media (max-width: 768px) {
+    .education-grid {
+      grid-template-columns: 300px;
+    }
     .education-images img {
       width: 100%;
       height: auto;
-      max-width: 250px;
       margin: 10px;
     }
   }
