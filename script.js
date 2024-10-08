@@ -14,7 +14,7 @@
 
   // Add event listener to view resume button
   document.getElementById('view-resume-btn').onclick = function() {
-    window.open('Miljot_Singh_Gambhir_Resume.pdf', '_blank');
+    window.open('Miljot Singh_Gambhir.pdf', '_blank');
   };
 
   // Get the home section
