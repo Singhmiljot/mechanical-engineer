@@ -14,7 +14,7 @@
 
   // Add event listener to view resume button
   document.getElementById('view-resume-btn').onclick = function() {
-    window.open('MiljotSinghGambhir_CV.pdf', '_blank');
+    window.open('Miljot_Singh_Gambhir.pdf', '_blank');
   };
 
   // Get the home section
@@ -109,3 +109,46 @@ document.getElementById('close-master').addEventListener('click', () => {
 function goBack() {
   window.history.back();
 }
+// Add these new functions to your existing JavaScript
+
+document.addEventListener('DOMContentLoaded', function() {
+  AOS.init({
+      duration: 1000,
+      once: true
+  });
+
+  const nav = document.querySelector('.top-nav');
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+          nav.classList.add('scrolled');
+      } else {
+          nav.classList.remove('scrolled');
+      }
+  });
+
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+  // Add a typing effect to the home section title
+  const titleElement = document.querySelector('#home h1');
+  const titleText = titleElement.textContent;
+  titleElement.textContent = '';
+  let i = 0;
+  function typeWriter() {
+      if (i < titleText.length) {
+          titleElement.textContent += titleText.charAt(i);
+          i++;
+          setTimeout(typeWriter, 50);
+      }
+  }
+  typeWriter();
+
+  // Add more JavaScript functionality as needed
+});
