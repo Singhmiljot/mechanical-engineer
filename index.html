@@ -10,22 +10,55 @@
 <body>
     <div class="portfolio-content">
         <header>
-            <nav class="top-nav">
+          <nav class="top-nav" aria-label="Main navigation">
+            <div class="top-nav-content">
                 <div class="nav-left">
-                    <h1>Miljot Singh Gambhir <span>Mechanical Engineer</span></h1>
+                    <h1>
+                        Miljot Singh Gambhir 
+                        <span class="title-designation">Mechanical Engineer</span>
+                    </h1>
                 </div>
                 <div class="nav-right">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><button id="view-resume-btn">View Resume</button></li>
+                    <ul class="nav-list" role="menubar">
+                        <li role="none">
+                            <a href="#home" role="menuitem" aria-current="page">Home</a>
+                        </li>
+                        <li role="none">
+                            <a href="#about" role="menuitem">About Me</a>
+                        </li>
+                        <li role="none">
+                            <a href="#education" role="menuitem">Education</a>
+                        </li>
+                        <li role="none">
+                            <a href="#experience" role="menuitem">Experience</a>
+                        </li>
+                        <li role="none">
+                            <a href="#projects" role="menuitem">Projects</a>
+                        </li>
+                        <li role="none">
+                            <a href="#contact" role="menuitem">Contact</a>
+                        </li>
+                        <li class="resume-button-container" role="none">
+                            <button 
+                                id="view-resume-btn" 
+                                type="button" 
+                                class="resume-btn"
+                                aria-label="View Resume">
+                                View Resume
+                            </button>
+                        </li>
                     </ul>
+                    <!-- Add hamburger menu for mobile -->
+                    <button 
+                        class="mobile-menu-toggle" 
+                        aria-label="Toggle menu"
+                        aria-expanded="false"
+                        type="button">
+                        <span class="hamburger-icon"></span>
+                    </button>
                 </div>
-            </nav>
+            </div>
+        </nav>
         </header>
 
         <main>
@@ -269,18 +302,19 @@
                 </div>
             </div>
         </div>
-        <div class="project3" style="background-image: url('images/project 3/projback.jpeg'); background-size: cover; background-position: center;">            <div class="project-image">
-                <div class="project-info">
-                    <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
-                    <a href="project3.html" class="project-link">
-                        <span>View Project</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 13l-5 5-5-5" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
+        <div class="project">
+          <div class="project-image" style="background-image: url('images/project 3/projback.jpeg');">
+              <div class="project-info">
+                  <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
+                  <a href="project3.html" class="project-link">
+                      <span>View Project</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M18 13l-5 5-5-5" />
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
         <div class="project">
             <div class="project4 project-image">
                 <div class="project-info">
