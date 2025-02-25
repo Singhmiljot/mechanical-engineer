@@ -675,6 +675,20 @@ i {
 .experience-info p {
     margin-bottom: 20px;
 }
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers images */
+    gap: 10px; /* Adds space between images */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.image-container img,
+.image-container video {
+    width: 48%; /* Adjust size (keeps both images & videos same width) */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures consistency */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
 .back-btn {
     background-color: #4CAF50;
     color: #fff;
