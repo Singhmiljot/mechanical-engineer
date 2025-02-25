@@ -677,16 +677,16 @@ i {
 }
 .image-container {
     display: flex;
-    justify-content: center; /* Centers images */
-    gap: 10px; /* Adds space between images */
-    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: center; /* Aligns content in center */
+    gap: 10px; /* Space between images/videos */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .image-container img,
 .image-container video {
-    width: 48%; /* Adjust size (keeps both images & videos same width) */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures consistency */
+    width: 30%; /* Adjust size for all elements */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures uniform appearance */
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
 .back-btn {
