@@ -2,97 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Development of a Mechanical Design for a 3D Printer</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale极=1.0">
+    <title>Project 6</title>
     <link rel="stylesheet" href="project6.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="project6.js" defer></script>
 </head>
 <body>
-    <nav class="top-nav" aria-label="Main navigation">
-        <div class="top-nav-content">
-            <div class="nav-left">
-                <h1>
-                    Miljot Singh Gambhir 
-                    <span class="title-designation">Mechanical Engineer</span>
-                </h1>
+    <div class="project-container">
+        <a href="index.html" class="back-button">← Back to Home</a>
+        <h1>Development of a Mechanical Design for a 3D Printer</h1>
+        <p>This project focuses on the mechanical design and development of a 3D printer. Below are the key components and mini-projects:</p>
+        
+        <div class="project-cards">
+            <div class="project-card" data-modal="modal1">
+                <img src="images/project 6/pic 1.png" alt="Component 1">
+                <p>3D Printed Pedal-Operated Trash Bin</p>
             </div>
-            <div class="nav-right">
-                <ul class="nav-list" role="menubar">
-                    <li role="none">
-                        <a href="#home" role="menuitem" aria-current="page">Home</a>
-                    </li>
-                    <li role="none">
-                        <a href="#about" role="menuitem">About Me</a>
-                    </li>
-                    <li role="none">
-                        <a href="#education" role="menuitem">Education</a>
-                    </li>
-                    <li role="none">
-                        <a href="#experience" role="menuitem">Experience</a>
-                    </li>
-                    <li role="none">
-                        <a href="#projects" role="menuitem">Projects</a>
-                    </li>
-                    <li role="none">
-                        <a href="#contact" role="menuitem">Contact</a>
-                    </li>
-                    <li class="resume-button-container" role="none">
-                        <button 
-                            id="view-resume-btn" 
-                            type="button" 
-                            class="resume-btn"
-                            aria-label="View Resume">
-                            View Resume
-                        </button>
-                    </li>
-                </ul>
-                <!-- Add hamburger menu for mobile -->
-                <button 
-                    class="mobile-menu-toggle" 
-                    aria-label="Toggle menu"
-                    aria-expanded="false"
-                    type="button">
-                    <span class="hamburger-icon"></span>
-                </button>
+            <div class="project-card" data-modal="modal2">
+                <img src="images/project 6/pic 2.png" alt="Component 2">
+                <p>Extruder Mechanism</p>
+            </div>
+            <div class="project-card" data-modal="modal3">
+                <img src="images/project 6/pic 3.png" alt="Component 3">
+                <p>Motion System</p>
+            </div>
+            <div class="project-card" data-modal="modal4">
+                <img src="images/project 6/pic 4.png" alt="Component 4">
+                <p>Control Interface</p>
             </div>
         </div>
-    </nav>
-    </header>
+    </div>
 
-    <main>
-        <section style="margin-top: 100px;"></section>
-        <section id="project" class="project-section">
-            <div class="project6-grid">
-                <div class="project6-box">
-                    <img src="images/project 6/pic 1.png" alt="Image 1">
-                    <p class="project6-title">3D printed waste bin</p>
-                </div>
-                <div class="project6-box">
-                    <img src="images/project 6/pic 2.png" alt="Image 2">
-                  
-                    <p class="project6-title">JCB digger Arm</p>
-                </div>
-                <div class="project6-box">
-                    <img src="images/project 6/pic 3.png" alt="Image 3">
-                   
-                    <p class="project6-title">3D printed table basket</p>
-                </div>
-                <div class="project6-box">
-                    <img src="images/project 6/pic 4.png" alt="Image 4">
-                   
-                    <p class="project6-title">Toy Boat</p>
-                </div>
-                <div class="project6-box">
-                    <img src="images/project 6/pic 5.png" alt="Image 5">
-                    
-                    <p class="project6-title">Titanium disk brake with callipers</p>
-                </div>
-            </div>
-            <button class="back-to-projects" onclick="history.back()">Back</button>
-        </section>
-    </main>
+    <!-- Modal Windows -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/project 6/pic 1.png" alt="Component 1">
+            <h3>🚀 3D Printed Pedal-Operated Trash Bin – Design & Engineering Showcase</h3>
+        
+            <p>📌 Project Overview</p>
+            <p>This 3D-printed prototype of a pedal-operated trash bin integrates mechanical design, motion study, and additive manufacturing to demonstrate an efficient and ergonomic waste management solution. The design ensures hands-free operation, optimizing both hygiene and usability.</p>
+            
+            <p>🛠️ Skills Demonstrated</p>
+            <ul>
+                <li>✔ Mechanical Design – Engineered for smooth pedal operation, linkage mechanisms, and structural stability.</li>
+                <li>✔ 3D CAD Modeling – Designed in Fusion 360, ensuring precision, manufacturability, and optimized assembly.</li>
+                <li>✔ Additive Manufacturing (3D Printing) – Utilized FDM printing to prototype a functional mechanical system.</li>
+                <li>✔ Material Selection – PLA for prototyping; ABS, PETG, or metal-reinforced plastic for real-world applications.</li>
+                <li>✔ Motion Study & Kinematic Analysis – Simulated in Fusion 360 to validate pedal movement, force distribution, and component interaction.</li>
+                <li>✔ Design for Manufacturing (DFM) & Assembly (DFA) – Simplified part integration for efficient production and user-friendly assembly.</li>
+            </ul>
 
-    <script src="script.js"></script>
+            <p>⚙️ Motion Analysis & Mechanism Design</p>
+            <ul>
+                <li>Linkage System: The pedal operates via a lever-arm mechanism, smoothly lifting the lid with minimal force.</li>
+                <li>Load Distribution: The foot pedal, hinges, and lid movement were analyzed to ensure long-term durability.</li>
+                <li>Friction & Wear Considerations: Parts were optimized to reduce mechanical wear and improve the lifespan of the product.</li>
+                <li>Tested Opening Angle: Ensures maximum lid clearance while keeping the center of gravity stable.</li>
+            </ul>
+
+            <p>💡 Challenges & Learnings</p>
+            <p>🔴 Challenges Faced</p>
+            <ul>
+                <li>❌ Balancing Aesthetics & Functionality – The challenge was to keep the design visually appealing while ensuring structural strength.</li>
+                <li>❌ Ensuring Smooth Pedal Action – Required precise hinge alignment and lever optimization to achieve the right force balance.</li>
+                <li>❌ Material Limitations in 3D Printing – PLA and ABS have different flexural strengths, so reinforcement strategies were considered.</li>
+            </ul>
+
+            <p>✅ Key Learnings</p>
+            <ul>
+                <li>✔ Iterative Prototyping – Multiple design refinements improved mechanism efficiency and part strength.</li>
+                <li>✔ Material Optimization – Layer orientation and print settings significantly affect component strength and durability.</li>
+                <li>✔ DFM for Mass Production – The 3D-printed version helped identify potential molded plastic or metal alternatives for large-scale manufacturing.</li>
+            </ul>
+
+            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <ul>
+                <li>♻ Eco-Friendly Approach – Designed with biodegradable PLA & recyclable materials to reduce environmental impact.</li>
+                <li>🛠️ Optimized for Manufacturing – Simplified part count and assembly process for ease of production.</li>
+                <li>👥 User-Centric Design – Focused on ergonomics, accessibility, and hygiene benefits for daily use.</li>
+            </ul>
+
+            <p>📌 Prototype Specifications</p>
+            <ul>
+                <li>Technology Used: FDM 3D Printing</li>
+                <li>Material: PLA (Prototype), ABS/PETG (Future Versions)</li>
+                <li>Mechanism: Foot-Pedal Actuated Lid System</li>
+                <li>Additional Features: Removable Inner Bin, Anti-Slip Base, Stainless Steel Handle</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/project 6/p极ic 2.png" alt="Component 2">
+            <h3>Extruder Mechanism</h3>
+            <p>Detailed description of the extruder mechanism...</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/project 6/pic 3.png" alt="Component 3">
+            <h3>Motion System</h3>
+            <p>Detailed description of the motion system...</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/project 6/pic 4.png" alt="Component 4">
+            <h3>Control Interface</h3>
+            <p>Detailed description of the control interface...</p>
+        </div>
+    </div>
 </body>
 </html>
+
