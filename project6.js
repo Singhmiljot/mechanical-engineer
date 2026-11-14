@@ -1,36 +1,49 @@
-// Get all project cards
-const projectCards = document.querySelectorAll('.project-card');
+// Project 6: open a project's detail pop-up from its card
+(function () {
+    function openModal(modal) {
+        modal.style.display = 'block';
+        modal.scrollTop = 0;
+        const content = modal.querySelector('.modal-content');
+        if (content) content.scrollTop = 0;
+        document.body.style.overflow = 'hidden'; // stop the page scrolling behind the pop-up
+    }
 
-// Add click event listeners to each project card
-projectCards.forEach(card => {
-    card.addEventListener('click', () => {
-        const modalId = card.getAttribute('data-modal');
-        const modal = document.getElementById(modalId);
-        if (modal) {
-            modal.style.display = 'block';
-        }
+    function closeModal(modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.project-card').forEach(card => {
+        const modal = document.getElementById(card.getAttribute('data-modal'));
+        if (!modal) return;
+
+        card.addEventListener('click', () => openModal(modal));
+
+        // Keyboard: Enter or Space opens the card
+        card.addEventListener('keydown', (event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openModal(modal);
+            }
+        });
     });
-});
 
-// Get all close buttons
-const closeButtons = document.querySelectorAll('.close');
-
-// Add click event listeners to each close button
-closeButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal');
-        if (modal) {
-            modal.style.display = 'none';
-        }
+    document.querySelectorAll('.modal .close').forEach(button => {
+        button.addEventListener('click', () => closeModal(button.closest('.modal')));
     });
-});
 
-// Close the modal when clicking outside of it
-window.addEventListener('click', (event) => {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
+    // Close when clicking the dark backdrop
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) closeModal(modal);
+        });
     });
-});
+
+    // Close with Escape (the image viewer handles Escape first when it is open)
+    document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') return;
+        document.querySelectorAll('.modal').forEach(modal => {
+            if (modal.style.display === 'block') closeModal(modal);
+        });
+    });
+})();

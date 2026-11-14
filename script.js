@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector('.top-nav');
     const backToTopButton = document.querySelector('.back-to-top');
     const viewResumeBtn = document.getElementById('view-resume-btn');
-    const titleElement = document.querySelector('#home h1');
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const navList = document.querySelector('.nav-list');
 
@@ -106,14 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Typing effect
-    function typeWriter(element, text, i = 0) {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            setTimeout(() => typeWriter(element, text, i + 1), 100);
-        }
-    }
-
     // Event listeners
     window.addEventListener('scroll', handleScroll, { passive: true });
     document.addEventListener('mousemove', handleMouseMove);
@@ -146,13 +137,6 @@ document.addEventListener('DOMContentLoaded', function () {
     setupModal('learn-more-btn-about', 'about-modal', 'close-about');
     setupModal('learn-more-btn-bachelor', 'education-modal', 'close-bachelor');
     setupModal('learn-more-btn-master', 'education-modal-2', 'close-master');
-
-    // Typing effect on the home heading (index.html only)
-    if (titleElement) {
-        const titleText = titleElement.textContent.trim();
-        titleElement.textContent = '';
-        typeWriter(titleElement, titleText);
-    }
 
     // Initialize AOS if available
     if (typeof AOS !== 'undefined') {

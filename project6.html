@@ -3,109 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 6</title>
-    <link rel="stylesheet" href="project6.css?v=3">
-    <script src="project6.js?v=3" defer></script>
-    <link rel="stylesheet" href="lightbox.css?v=3">
-    <script src="lightbox.js?v=3" defer></script>
+    <title>CAD Design Showcase - Miljot Singh Gambhir</title>
+    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="project6.css?v=4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="lightbox.css?v=4">
+    <script src="lightbox.js?v=4" defer></script>
+    <script src="project6.js?v=4" defer></script>
 </head>
 <body>
-    <div class="project-container">
-        <a href="index.html" class="back-button">← Back to Home</a>
-        <h1>Development of a Mechanical Design for a 3D Printer</h1>
-        <p>This project focuses on the mechanical design and development of a 3D printer. Below are the key components and mini-projects:</p>
-        
-        <div class="project-cards">
-            <div class="project-card" data-modal="modal1">
-                <img src="images/project 6/pic 1.png" alt="Component 1">
-                <p>3D Printed Pedal-Operated Trash Bin</p>
+    <header>
+        <nav class="top-nav" aria-label="Main navigation">
+            <div class="top-nav-content">
+                <div class="nav-left">
+                    <h1>
+                        Miljot Singh Gambhir 
+                        <span class="title-designation">Mechanical Engineer</span>
+                    </h1>
+                </div>
+                <div class="nav-right">
+                    <ul class="nav-list" role="menubar">
+                        <li role="none">
+                            <a href="index.html#home" role="menuitem">Home</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#about" role="menuitem">About Me</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#skills" role="menuitem">Skills</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#education" role="menuitem">Education</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#experience" role="menuitem">Experience</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#projects" role="menuitem">Projects</a>
+                        </li>
+                        <li role="none">
+                            <a href="index.html#contact" role="menuitem">Contact</a>
+                        </li>
+                        <li class="resume-button-container" role="none">
+                            <button 
+                                id="view-resume-btn" 
+                                type="button" 
+                                class="resume-btn"
+                                aria-label="View Resume">
+                                View Resume
+                            </button>
+                        </li>
+                    </ul>
+                    <button 
+                        class="mobile-menu-toggle" 
+                        aria-label="Toggle menu"
+                        aria-expanded="false"
+                        type="button">
+                        <span class="hamburger-icon"></span>
+                    </button>
+                </div>
             </div>
-            <div class="project-card" data-modal="modal2">
-                <img src="images/project 6/pic 2.png" alt="Hydraulic Excavator Arm">
-                <p>Hydraulic Excavator Arm</p>
+        </nav>
+    </header>
+
+    <main>
+        <section id="project" class="project-section">
+            <h2>CAD Design Showcase</h2>
+            <p>A collection of independent CAD projects modelled in Fusion 360 and SolidWorks, covering mechanisms, multi-part assemblies, motion studies, rendering and design for additive manufacturing. Select a project to see the design details.</p>
+
+            <div class="project-cards">
+                <div class="project-card" data-modal="modal1" tabindex="0" role="button" aria-label="Open Pedal-Operated Bin (3D-Printed Prototype)">
+                    <img src="images/project 6/pic 1.png" alt="Pedal-Operated Bin (3D-Printed Prototype)">
+                    <p>Pedal-Operated Bin (3D-Printed Prototype)</p>
+                </div>
+                <div class="project-card" data-modal="modal2" tabindex="0" role="button" aria-label="Open Hydraulic Excavator Arm">
+                    <img src="images/project 6/pic 2.png" alt="Hydraulic Excavator Arm">
+                    <p>Hydraulic Excavator Arm</p>
+                </div>
+                <div class="project-card" data-modal="modal3" tabindex="0" role="button" aria-label="Open 3D-Printed Perforated Basket">
+                    <img src="images/project 6/pic 3.png" alt="3D-Printed Perforated Basket">
+                    <p>3D-Printed Perforated Basket</p>
+                </div>
+                <div class="project-card" data-modal="modal4" tabindex="0" role="button" aria-label="Open 3D-Printed Benchmark Boat">
+                    <img src="images/project 6/pic 4.png" alt="3D-Printed Benchmark Boat">
+                    <p>3D-Printed Benchmark Boat</p>
+                </div>
+                <div class="project-card" data-modal="modal5" tabindex="0" role="button" aria-label="Open Four-Cylinder Engine Assembly">
+                    <img src="images/project 6/Figures/Four_Cylinder_Engine-Assembly.gif" alt="Four-Cylinder Engine Assembly">
+                    <p>Four-Cylinder Engine Assembly</p>
+                </div>
+                <div class="project-card" data-modal="modal6" tabindex="0" role="button" aria-label="Open High-Performance Disc Brake System">
+                    <img src="images/project 6/disk brake/Assembly_disc_Brake_2025-Feb-28_01-33-11AM-000_CustomizedView22537321632_png_alpha.png" alt="High-Performance Disc Brake System">
+                    <p>High-Performance Disc Brake System</p>
+                </div>
+                <div class="project-card" data-modal="modal7" tabindex="0" role="button" aria-label="Open Vintage Street Lamp Post">
+                    <img src="images/project 6/Lamp_post.png" alt="Vintage Street Lamp Post">
+                    <p>Vintage Street Lamp Post</p>
+                </div>
+                <div class="project-card" data-modal="modal8" tabindex="0" role="button" aria-label="Open Hydraulic Scissor Lift Table">
+                    <video src="images/project 6/Scissor lift/assembly hydrolic cylinder1.mp4" autoplay loop muted playsinline aria-label="Hydraulic Scissor Lift Table"></video>
+                    <p>Hydraulic Scissor Lift Table</p>
+                </div>
             </div>
-            <div class="project-card" data-modal="modal3">
-                <img src="images/project 6/pic 3.png" alt="Component 3">
-                <p>3D-Printed Perforated Basket</p>
-            </div>
-            <div class="project-card" data-modal="modal4">
-                <img src="images/project 6/pic 4.png" alt="Component 4">
-                <p>3D-printed boat model</p>
-            </div>
-            <div class="project-card" data-modal="modal5">
-                <img src="images/project 6/Figures/Four_Cylinder_Engine-Assembly.gif" alt="Four Cylinder Engine Assembly">
-                <p>Four Cylinder Engine Assembly</p>
-            </div>
-            <div class="project-card" data-modal="modal6">
-                <img src="images/project 6/disk brake/Assembly_disc_Brake_2025-Feb-28_01-33-11AM-000_CustomizedView22537321632_png_alpha.png" alt="High-Performance Brake System">
-                <p>High-Performance Brake System</p>
-            </div>
-            <div class="project-card" data-modal="modal7">
-                <img src="images/project 6/Lamp_post.png" alt="Vintage Street Lamp Post">
-                <p>Vintage Street Lamp Post – Design & Engineering Showcase</p>
-            </div>
-            <div class="project-card" data-modal="modal8">
-                <video src="images/project 6/Scissor lift/assembly hydrolic cylinder1.mp4" autoplay loop muted playsinline aria-label="Scissor Lift Table"></video>
-                <p>Scissor Lift Table – Design & Engineering Showcase</p>
-            </div>
-        </div>
-    </div>
+
+            <button class="back-to-projects" onclick="history.back()">Back</button>
+        </section>
+    </main>
 
     <!-- Modal Windows -->
     <div id="modal1" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="images/project 6/pic 1.png" alt="Component 1">
-            <h3>🚀 3D Printed Pedal-Operated Trash Bin – Design & Engineering Showcase</h3>
-            <p>📌 Project Overview</p>
+            <img src="images/project 6/pic 1.png" alt="Pedal-Operated Bin (3D-Printed Prototype)">
+            <h3>Pedal-Operated Bin (3D-Printed Prototype)</h3>
+            <h4>Project Overview</h4>
             <p>This 3D-printed prototype of a pedal-operated trash bin integrates mechanical design, motion study, and additive manufacturing to demonstrate an efficient and ergonomic waste management solution. The design ensures hands-free operation, optimizing both hygiene and usability.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Mechanical Design – Engineered for smooth pedal operation, linkage mechanisms, and structural stability.</li>
-                <li>✔ 3D CAD Modeling – Designed in Fusion 360, ensuring precision, manufacturability, and optimized assembly.</li>
-                <li>✔ Additive Manufacturing (3D Printing) – Utilized FDM printing to prototype a functional mechanical system.</li>
-                <li>✔ Material Selection – PLA for prototyping; ABS, PETG, or metal-reinforced plastic for real-world applications.</li>
-                <li>✔ Motion Study & Kinematic Analysis – Simulated in Fusion 360 to validate pedal movement, force distribution, and component interaction.</li>
-                <li>✔ Design for Manufacturing (DFM) & Assembly (DFA) – Simplified part integration for efficient production and user-friendly assembly.</li>
+                <li><strong>Mechanical Design</strong> – Engineered for smooth pedal operation, linkage mechanisms, and structural stability.</li>
+                <li><strong>3D CAD Modeling</strong> – Designed in Fusion 360, ensuring precision, manufacturability, and optimized assembly.</li>
+                <li><strong>Additive Manufacturing (3D Printing)</strong> – Utilized FDM printing to prototype a functional mechanical system.</li>
+                <li><strong>Material Selection</strong> – PLA for prototyping; ABS, PETG, or metal-reinforced plastic for real-world applications.</li>
+                <li><strong>Motion Study & Kinematic Analysis</strong> – Simulated in Fusion 360 to validate pedal movement, force distribution, and component interaction.</li>
+                <li><strong>Design for Manufacturing (DFM) & Assembly (DFA)</strong> – Simplified part integration for efficient production and user-friendly assembly.</li>
             </ul>
 
-            <p>⚙️ Motion Analysis & Mechanism Design</p>
+            <h4>Motion Analysis & Mechanism Design</h4>
             <ul>
-                <li>Linkage System: The pedal operates via a lever-arm mechanism, smoothly lifting the lid with minimal force.</li>
-                <li>Load Distribution: The foot pedal, hinges, and lid movement were analyzed to ensure long-term durability.</li>
-                <li>Friction & Wear Considerations: Parts were optimized to reduce mechanical wear and improve the lifespan of the product.</li>
-                <li>Tested Opening Angle: Ensures maximum lid clearance while keeping the center of gravity stable.</li>
+                <li><strong>Linkage System</strong>: The pedal operates via a lever-arm mechanism, smoothly lifting the lid with minimal force.</li>
+                <li><strong>Load Distribution</strong>: The foot pedal, hinges, and lid movement were analyzed to ensure long-term durability.</li>
+                <li><strong>Friction & Wear Considerations</strong>: Parts were optimized to reduce mechanical wear and improve the lifespan of the product.</li>
+                <li><strong>Tested Opening Angle</strong>: Ensures maximum lid clearance while keeping the center of gravity stable.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Balancing Aesthetics & Functionality – The challenge was to keep the design visually appealing while ensuring structural strength.</li>
-                <li>❌ Ensuring Smooth Pedal Action – Required precise hinge alignment and lever optimization to achieve the right force balance.</li>
-                <li>❌ Material Limitations in 3D Printing – PLA and ABS have different flexural strengths, so reinforcement strategies were considered.</li>
+                <li><strong>Balancing Aesthetics & Functionality</strong> – The challenge was to keep the design visually appealing while ensuring structural strength.</li>
+                <li><strong>Ensuring Smooth Pedal Action</strong> – Required precise hinge alignment and lever optimization to achieve the right force balance.</li>
+                <li><strong>Material Limitations in 3D Printing</strong> – PLA and ABS have different flexural strengths, so reinforcement strategies were considered.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Iterative Prototyping – Multiple design refinements improved mechanism efficiency and part strength.</li>
-                <li>✔ Material Optimization – Layer orientation and print settings significantly affect component strength and durability.</li>
-                <li>✔ DFM for Mass Production – The 3D-printed version helped identify potential molded plastic or metal alternatives for large-scale manufacturing.</li>
+                <li><strong>Iterative Prototyping</strong> – Multiple design refinements improved mechanism efficiency and part strength.</li>
+                <li><strong>Material Optimization</strong> – Layer orientation and print settings significantly affect component strength and durability.</li>
+                <li><strong>DFM for Mass Production</strong> – The 3D-printed version helped identify potential molded plastic or metal alternatives for large-scale manufacturing.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Eco-Friendly Approach – Designed with biodegradable PLA & recyclable materials to reduce environmental impact.</li>
-                <li>🛠 Optimized for Manufacturing – Simplified part count and assembly process for ease of production.</li>
-                <li>👥 User-Centric Design – Focused on ergonomics, accessibility, and hygiene benefits for daily use.</li>
+                <li><strong>Eco-Friendly Approach</strong> – Designed with biodegradable PLA & recyclable materials to reduce environmental impact.</li>
+                <li><strong>Optimized for Manufacturing</strong> – Simplified part count and assembly process for ease of production.</li>
+                <li><strong>User-Centric Design</strong> – Focused on ergonomics, accessibility, and hygiene benefits for daily use.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Technology Used: FDM 3D Printing</li>
-                <li>Material: PLA (Prototype), ABS/PETG (Future Versions)</li>
-                <li>Mechanism: Foot-Pedal Actuated Lid System</li>
-                <li>Additional Features: Removable Inner Bin, Anti-Slip Base, Stainless Steel Handle</li>
+                <li><strong>Technology Used</strong>: FDM 3D Printing</li>
+                <li><strong>Material</strong>: PLA (Prototype), ABS/PETG (Future Versions)</li>
+                <li><strong>Mechanism</strong>: Foot-Pedal Actuated Lid System</li>
+                <li><strong>Additional Features</strong>: Removable Inner Bin, Anti-Slip Base, Stainless Steel Handle</li>
             </ul>
         </div>
     </div>
@@ -114,56 +172,55 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <img src="images/project 6/pic 2.png" alt="Hydraulic Excavator Arm">
-            <h3>🚜 Hydraulic Excavator Arm – Design & Engineering Showcase</h3>
-            <p>📌 Project Overview</p>
+            <h3>Hydraulic Excavator Arm</h3>
+            <h4>Project Overview</h4>
             <p>This hydraulic excavator arm is a 3D CAD prototype, demonstrating mechanical linkages, force transmission, and structural integrity. The design focuses on real-world excavator kinematics, showcasing actuation principles used in heavy machinery and automation.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Mechanical Linkage Design – Engineered for optimized force distribution and smooth motion.</li>
-                <li>✔ Hydraulic Mechanism Simulation – Simulated actuation forces in Fusion 360 Motion Study.</li>
-                <li>✔ Finite Element Analysis (FEA) – Evaluated stress distribution & load-bearing capacity.</li>
-                <li>✔ 3D CAD Modeling – Designed in Fusion 360, ensuring structural stability & manufacturability.</li>
-                <li>✔ Material Selection – Optimized for high-strength steel alloys or reinforced composites.</li>
-                <li>✔ Design for Manufacturing (DFM) & Assembly (DFA) – Optimized for ease of fabrication and maintenance.</li>
+                <li><strong>Mechanical Linkage Design</strong> – Engineered for optimized force distribution and smooth motion.</li>
+                <li><strong>Hydraulic Mechanism Simulation</strong> – Simulated actuation forces in Fusion 360 Motion Study.</li>
+                <li><strong>Finite Element Analysis (FEA)</strong> – Evaluated stress distribution & load-bearing capacity.</li>
+                <li><strong>3D CAD Modeling</strong> – Designed in Fusion 360, ensuring structural stability & manufacturability.</li>
+                <li><strong>Material Selection</strong> – Optimized for high-strength steel alloys or reinforced composites.</li>
+                <li><strong>Design for Manufacturing (DFM) & Assembly (DFA)</strong> – Optimized for ease of fabrication and maintenance.</li>
             </ul>
 
-            <p>⚙️ Motion Analysis & Mechanism Design</p>
+            <h4>Motion Analysis & Mechanism Design</h4>
             <ul>
-                <li>Hydraulic Cylinder Actuation – Simulated using force-controlled motion to mimic real-world functionality.</li>
-                <li>Load-Bearing Components – Designed for heavy-duty excavation and structural stress resistance.</li>
-                <li>Joint Kinematics – Optimized pivot points ensure smooth range of motion while minimizing stress concentrations.</li>
-                <li>Bucket Linkage System – Engineered for precise digging and load-handling efficiency.</li>
+                <li><strong>Hydraulic Cylinder Actuation</strong> – Simulated using force-controlled motion to mimic real-world functionality.</li>
+                <li><strong>Load-Bearing Components</strong> – Designed for heavy-duty excavation and structural stress resistance.</li>
+                <li><strong>Joint Kinematics</strong> – Optimized pivot points ensure smooth range of motion while minimizing stress concentrations.</li>
+                <li><strong>Bucket Linkage System</strong> – Engineered for precise digging and load-handling efficiency.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Balancing Strength & Weight – Ensuring high load capacity without excessive material usage.</li>
-                <li>❌ Hydraulic Actuation Simulation – Needed accurate force application for realistic movement.</li>
-                <li>❌ Joint Wear & Tear Considerations – Required material reinforcement & bushing integration.</li>
+                <li><strong>Balancing Strength & Weight</strong> – Ensuring high load capacity without excessive material usage.</li>
+                <li><strong>Hydraulic Actuation Simulation</strong> – Needed accurate force application for realistic movement.</li>
+                <li><strong>Joint Wear & Tear Considerations</strong> – Required material reinforcement & bushing integration.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Structural Optimization – Applied FEA to reinforce high-stress areas while reducing unnecessary weight.</li>
-                <li>✔ Actuation Force Optimization – Ensured efficiency in hydraulic movement through precise linkage geometry.</li>
-                <li>✔ Manufacturing Feasibility – Evaluated real-world welding, machining, and assembly constraints.</li>
+                <li><strong>Structural Optimization</strong> – Applied FEA to reinforce high-stress areas while reducing unnecessary weight.</li>
+                <li><strong>Actuation Force Optimization</strong> – Ensured efficiency in hydraulic movement through precise linkage geometry.</li>
+                <li><strong>Manufacturing Feasibility</strong> – Evaluated real-world welding, machining, and assembly constraints.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Eco-Friendly Approach – Evaluated alternative lightweight materials for fuel efficiency.</li>
-                <li>🛠️ Optimized for Manufacturing – Reduced part complexity for ease of fabrication.</li>
-                <li>👥 User-Centric Design – Considered operator visibility, safety, and control ergonomics.</li>
+                <li><strong>Eco-Friendly Approach</strong> – Evaluated alternative lightweight materials for fuel efficiency.</li>
+                <li><strong>Optimized for Manufacturing</strong> – Reduced part complexity for ease of fabrication.</li>
+                <li><strong>User-Centric Design</strong> – Considered operator visibility, safety, and control ergonomics.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Technology Used: Fusion 360 CAD Modeling & Motion Study</li>
-                <li>Material: High-Strength Steel / Aluminum Alloy (Future Production Feasibility)</li>
-                <li>Mechanism: Hydraulic Cylinder Actuated Arm with Optimized Linkage System</li>
-                <li>Additional Features: Reinforced Pivot Joints, Stress-Optimized Geometry, Realistic Bucket Motion</li>
+                <li><strong>Technology Used</strong>: Fusion 360 CAD Modeling & Motion Study</li>
+                <li><strong>Material</strong>: High-Strength Steel / Aluminum Alloy (Future Production Feasibility)</li>
+                <li><strong>Mechanism</strong>: Hydraulic Cylinder Actuated Arm with Optimized Linkage System</li>
+                <li><strong>Additional Features</strong>: Reinforced Pivot Joints, Stress-Optimized Geometry, Realistic Bucket Motion</li>
             </ul>
         </div>
     </div>
@@ -171,59 +228,57 @@
     <div id="modal3" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="images/project 6/pic 3.png" alt="Component 3">
+            <img src="images/project 6/pic 3.png" alt="3D-Printed Perforated Basket">
             <h3>3D-Printed Perforated Basket</h3>
-            <p>🛠️ 3D-Printed Perforated Basket – Design & Engineering Showcase</p>
-            <p>📌 Project Overview</p>
+            <h4>Project Overview</h4>
             <p>This 3D-printed perforated basket is an optimized design for lightweight, high-strength, and functional utility. The hexagonal cutouts provide structural integrity while minimizing material usage, making it ideal for household, industrial, or filtration applications.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Parametric CAD Modeling – Designed in Fusion 360 with precise geometric control.</li>
-                <li>✔ Topology Optimization – Reduced material usage while maintaining structural rigidity.</li>
-                <li>✔ Finite Element Analysis (FEA) – Tested load distribution and mechanical performance.</li>
-                <li>✔ 3D Printing Process Optimization – Designed for FDM/SLA additive manufacturing with minimal support structures.</li>
-                <li>✔ Material Selection – Evaluated PLA, ABS, and PETG for different applications.</li>
-                <li>✔ Sustainable & Lightweight Design – Minimized waste while enhancing durability.</li>
+                <li><strong>Parametric CAD Modeling</strong> – Designed in Fusion 360 with precise geometric control.</li>
+                <li><strong>Topology Optimization</strong> – Reduced material usage while maintaining structural rigidity.</li>
+                <li><strong>Finite Element Analysis (FEA)</strong> – Tested load distribution and mechanical performance.</li>
+                <li><strong>3D Printing Process Optimization</strong> – Designed for FDM/SLA additive manufacturing with minimal support structures.</li>
+                <li><strong>Material Selection</strong> – Evaluated PLA, ABS, and PETG for different applications.</li>
+                <li><strong>Sustainable & Lightweight Design</strong> – Minimized waste while enhancing durability.</li>
             </ul>
 
-            <p>⚙️ Design Features</p>
+            <h4>Design Features</h4>
             <ul>
-                <li>Perforated Hexagonal Structure – Ensures strength, ventilation, and aesthetic appeal.</li>
-                <li>Tapered Circular Base – Provides stability and ergonomic handling.</li>
-                <li>Minimalist & Functional – Lightweight yet durable for various applications.</li>
-                <li>Customization Possibilities – Adaptable in size, pattern density, and material selection.</li>
+                <li><strong>Perforated Hexagonal Structure</strong> – Ensures strength, ventilation, and aesthetic appeal.</li>
+                <li><strong>Tapered Circular Base</strong> – Provides stability and ergonomic handling.</li>
+                <li><strong>Minimalist & Functional</strong> – Lightweight yet durable for various applications.</li>
+                <li><strong>Customization Possibilities</strong> – Adaptable in size, pattern density, and material selection.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Balancing Strength & Flexibility – Needed optimal material infill & layer adhesion.</li>
-                <li>❌ Perforation Density & Printability – Ensured proper bridging to prevent printing errors.</li>
-                <li>❌ Warping & Dimensional Accuracy – Addressed through print orientation & cooling control.</li>
+                <li><strong>Balancing Strength & Flexibility</strong> – Needed optimal material infill & layer adhesion.</li>
+                <li><strong>Perforation Density & Printability</strong> – Ensured proper bridging to prevent printing errors.</li>
+                <li><strong>Warping & Dimensional Accuracy</strong> – Addressed through print orientation & cooling control.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Layer Thickness & Print Speed Tuning – Adjusted for optimal mechanical strength.</li>
-                <li>✔ Structural Analysis for Load Optimization – Ensured durability under real-world use.</li>
-                <li>✔ Slicer Optimization for Reduced Print Time – Improved efficiency while retaining aesthetics.</li>
+                <li><strong>Layer Thickness & Print Speed Tuning</strong> – Adjusted for optimal mechanical strength.</li>
+                <li><strong>Structural Analysis for Load Optimization</strong> – Ensured durability under real-world use.</li>
+                <li><strong>Slicer Optimization for Reduced Print Time</strong> – Improved efficiency while retaining aesthetics.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Eco-Friendly Filament – Evaluated PLA (biodegradable) vs. PETG (recyclable) for sustainability.</li>
-                <li>🛠️ Optimized for Additive Manufacturing – Reduced material waste while maintaining performance.</li>
-                <li>👥 User-Centric Approach – Designed for ergonomic usability and multipurpose applications.</li>
+                <li><strong>Eco-Friendly Filament</strong> – Evaluated PLA (biodegradable) vs. PETG (recyclable) for sustainability.</li>
+                <li><strong>Optimized for Additive Manufacturing</strong> – Reduced material waste while maintaining performance.</li>
+                <li><strong>User-Centric Approach</strong> – Designed for ergonomic usability and multipurpose applications.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Technology Used: Fusion 360 CAD Modeling & 3D Printing</li>
-                <li>Material Options: PLA / ABS / PETG / Nylon</li>
-                <li>Print Method: Fused Deposition Modeling (FDM) or Selective Laser Sintering (SLS)</li>
-                <li>Design Optimization: Perforation-based weight reduction & structural reinforcement</li>
-                <li>Additional Features: Customizable sizes, surface finishes, and post-processing compatibility</li>
+                <li><strong>Technology Used</strong>: Fusion 360 CAD Modeling & 3D Printing</li>
+                <li><strong>Material Options</strong>: PLA / ABS / PETG / Nylon</li>
+                <li><strong>Print Method</strong>: Fused Deposition Modeling (FDM) or Selective Laser Sintering (SLS)</li>
+                <li><strong>Design Optimization</strong>: Perforation-based weight reduction & structural reinforcement</li>
+                <li><strong>Additional Features</strong>: Customizable sizes, surface finishes, and post-processing compatibility</li>
             </ul>
         </div>
     </div>
@@ -231,59 +286,57 @@
     <div id="modal4" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <img src="images/project 6/pic 4.png" alt="Component 4">
-            <h3>3D-printed boat model</h3>
-            <p>🛠️ 3D-printed boat model – Engineering & Design Details</p>
-            <p>📌 Project Overview</p>
+            <img src="images/project 6/pic 4.png" alt="3D-Printed Benchmark Boat">
+            <h3>3D-Printed Benchmark Boat</h3>
+            <h4>Project Overview</h4>
             <p>This 3D-printed boat model is a benchmark test print, commonly used for evaluating the precision, surface finish, and mechanical performance of a 3D printer. The design includes complex geometric features, such as overhangs, small holes, and fine details, making it an ideal test object for calibrating and optimizing print settings.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Parametric 3D Modeling – Designed in Fusion 360 with detailed features.</li>
-                <li>✔ Additive Manufacturing Optimization – Developed for FDM, SLA, or SLS 3D printing.</li>
-                <li>✔ Surface Texture Simulation – Enhanced visual appeal with wood filament effect.</li>
-                <li>✔ Structural Analysis – Ensured printability without warping or layer shifting.</li>
-                <li>✔ Tolerance Testing – Evaluated printer accuracy for small details & clearances.</li>
+                <li><strong>Parametric 3D Modeling</strong> – Designed in Fusion 360 with detailed features.</li>
+                <li><strong>Additive Manufacturing Optimization</strong> – Developed for FDM, SLA, or SLS 3D printing.</li>
+                <li><strong>Surface Texture Simulation</strong> – Enhanced visual appeal with wood filament effect.</li>
+                <li><strong>Structural Analysis</strong> – Ensured printability without warping or layer shifting.</li>
+                <li><strong>Tolerance Testing</strong> – Evaluated printer accuracy for small details & clearances.</li>
             </ul>
 
-            <p>⚙️ Design Features</p>
+            <h4>Design Features</h4>
             <ul>
-                <li>Curved Hull & Cabin Structure – Tests printer’s ability to handle smooth surfaces.</li>
-                <li>Circular & Rectangular Cutouts – Evaluates bridging performance and retraction settings.</li>
-                <li>Overhangs & Small Details – Assesses layer adhesion, cooling, and precision.</li>
-                <li>Chimney & Fine Structures – Checks vertical accuracy and layer stacking.</li>
-                <li>Wood-Like Finish – Printed using a wood-infused filament for enhanced aesthetics.</li>
+                <li><strong>Curved Hull & Cabin Structure</strong> – Tests printer’s ability to handle smooth surfaces.</li>
+                <li><strong>Circular & Rectangular Cutouts</strong> – Evaluates bridging performance and retraction settings.</li>
+                <li><strong>Overhangs & Small Details</strong> – Assesses layer adhesion, cooling, and precision.</li>
+                <li><strong>Chimney & Fine Structures</strong> – Checks vertical accuracy and layer stacking.</li>
+                <li><strong>Wood-Like Finish</strong> – Printed using a wood-infused filament for enhanced aesthetics.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Warping & Layer Adhesion Issues – Required bed leveling & temperature tuning.</li>
-                <li>❌ Stringing & Over-Extrusion – Optimized retraction settings for cleaner edges.</li>
-                <li>❌ Overhang Stability – Improved cooling and support structures where necessary.</li>
+                <li><strong>Warping & Layer Adhesion Issues</strong> – Required bed leveling & temperature tuning.</li>
+                <li><strong>Stringing & Over-Extrusion</strong> – Optimized retraction settings for cleaner edges.</li>
+                <li><strong>Overhang Stability</strong> – Improved cooling and support structures where necessary.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Fine-Tuned Print Speed & Temperature – Balanced quality and efficiency.</li>
-                <li>✔ Tested Various Filaments – Compared PLA, ABS, PETG, and wood-infused materials.</li>
-                <li>✔ Enhanced Layer Resolution – Improved Z-axis accuracy for smoother prints.</li>
+                <li><strong>Fine-Tuned Print Speed & Temperature</strong> – Balanced quality and efficiency.</li>
+                <li><strong>Tested Various Filaments</strong> – Compared PLA, ABS, PETG, and wood-infused materials.</li>
+                <li><strong>Enhanced Layer Resolution</strong> – Improved Z-axis accuracy for smoother prints.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Eco-Friendly Material Options – Evaluated biodegradable PLA and recyclable PETG.</li>
-                <li>🛠️ Optimized for 3D Printing Efficiency – Reduced material waste & print failures.</li>
-                <li>👥 User-Centric Design – Created for educational and calibration purposes.</li>
+                <li><strong>Eco-Friendly Material Options</strong> – Evaluated biodegradable PLA and recyclable PETG.</li>
+                <li><strong>Optimized for 3D Printing Efficiency</strong> – Reduced material waste & print failures.</li>
+                <li><strong>User-Centric Design</strong> – Created for educational and calibration purposes.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Software Used: Fusion 360, Cura, PrusaSlicer</li>
-                <li>Material Options: PLA, ABS, PETG, Wood-Infused Filament</li>
-                <li>Print Technology: Fused Deposition Modeling (FDM) / Resin Printing (SLA)</li>
-                <li>Print Dimensions: Adjustable based on printer capabilities</li>
-                <li>Primary Use Case: Benchmark Testing, Display Model, Educational Tool</li>
+                <li><strong>Software Used</strong>: Fusion 360, Cura, PrusaSlicer</li>
+                <li><strong>Material Options</strong>: PLA, ABS, PETG, Wood-Infused Filament</li>
+                <li><strong>Print Technology</strong>: Fused Deposition Modeling (FDM) / Resin Printing (SLA)</li>
+                <li><strong>Print Dimensions</strong>: Adjustable based on printer capabilities</li>
+                <li><strong>Primary Use Case</strong>: Benchmark Testing, Display Model, Educational Tool</li>
             </ul>
         </div>
     </div>
@@ -292,57 +345,56 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <img src="images/project 6/Figures/Four_Cylinder_Engine-Assembly.gif" alt="Four Cylinder Engine Assembly">
-            <h3>Four Cylinder Engine Assembly</h3>
-            <p>📌 Project Overview</p>
+            <h3>Four-Cylinder Engine Assembly</h3>
+            <h4>Project Overview</h4>
             <p>This four-cylinder inline engine is a high-precision 3D CAD model designed in Fusion 360. It simulates real-world engine mechanics, including pistons, connecting rods, crankshaft, and the engine block. This model showcases expertise in mechanical design, motion analysis, and manufacturing feasibility.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Advanced 3D Modeling – Developed using parametric design in Fusion 360.</li>
-                <li>✔ Motion & Kinematic Analysis – Simulated piston and crankshaft motion.</li>
-                <li>✔ Material Selection & Structural Optimization – Designed for high performance and durability.</li>
-                <li>✔ Manufacturing Considerations – Optimized for machining, casting, and additive manufacturing.</li>
-                <li>✔ Stress & Thermal Analysis – Evaluated engine performance under real-world conditions.</li>
+                <li><strong>Advanced 3D Modeling</strong> – Developed using parametric design in Fusion 360.</li>
+                <li><strong>Motion & Kinematic Analysis</strong> – Simulated piston and crankshaft motion.</li>
+                <li><strong>Material Selection & Structural Optimization</strong> – Designed for high performance and durability.</li>
+                <li><strong>Manufacturing Considerations</strong> – Optimized for machining, casting, and additive manufacturing.</li>
+                <li><strong>Stress & Thermal Analysis</strong> – Evaluated engine performance under real-world conditions.</li>
             </ul>
 
-            <p>⚙️ Design Features</p>
+            <h4>Design Features</h4>
             <ul>
-                <li>Four-Cylinder Inline Layout – Engineered for smooth operation and balance.</li>
-                <li>Piston & Crankshaft Motion – Simulated to replicate real-world engine dynamics.</li>
-                <li>Connecting Rod Design – Modeled for high strength and fatigue resistance.</li>
-                <li>Machinable Engine Block – Designed considering casting and CNC machining feasibility.</li>
-                <li>Tolerance & Fit Analysis – Ensured proper component alignment and assembly clearance.</li>
+                <li><strong>Four-Cylinder Inline Layout</strong> – Engineered for smooth operation and balance.</li>
+                <li><strong>Piston & Crankshaft Motion</strong> – Simulated to replicate real-world engine dynamics.</li>
+                <li><strong>Connecting Rod Design</strong> – Modeled for high strength and fatigue resistance.</li>
+                <li><strong>Machinable Engine Block</strong> – Designed considering casting and CNC machining feasibility.</li>
+                <li><strong>Tolerance & Fit Analysis</strong> – Ensured proper component alignment and assembly clearance.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Complex Motion Constraints – Required precise constraints for realistic motion.</li>
-                <li>❌ Material Optimization – Balancing weight, durability, and thermal expansion.</li>
-                <li>❌ Manufacturability Issues – Overcame challenges related to machining and casting.</li>
+                <li><strong>Complex Motion Constraints</strong> – Required precise constraints for realistic motion.</li>
+                <li><strong>Material Optimization</strong> – Balancing weight, durability, and thermal expansion.</li>
+                <li><strong>Manufacturability Issues</strong> – Overcame challenges related to machining and casting.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Refined Motion Simulation – Improved engine kinematics for realistic movement.</li>
-                <li>✔ Structural Optimization – Reduced material usage while maintaining strength.</li>
-                <li>✔ Enhanced Assembly Tolerances – Ensured smooth operation and minimal friction losses.</li>
+                <li><strong>Refined Motion Simulation</strong> – Improved engine kinematics for realistic movement.</li>
+                <li><strong>Structural Optimization</strong> – Reduced material usage while maintaining strength.</li>
+                <li><strong>Enhanced Assembly Tolerances</strong> – Ensured smooth operation and minimal friction losses.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Material Efficiency – Designed for lightweight & durable materials.</li>
-                <li>🛠️ Optimized for Machining & 3D Printing – Suitable for prototype development.</li>
-                <li>👥 Real-World Application – Created for educational and research purposes.</li>
+                <li><strong>Material Efficiency</strong> – Designed for lightweight & durable materials.</li>
+                <li><strong>Optimized for Machining & 3D Printing</strong> – Suitable for prototype development.</li>
+                <li><strong>Real-World Application</strong> – Created for educational and research purposes.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Software Used: Fusion 360, SolidWorks</li>
-                <li>Material Options: Aluminum, Cast Iron, Forged Steel</li>
-                <li>Manufacturing Techniques: CNC Machining, Casting, 3D Printing</li>
-                <li>Engine Configuration: Inline Four-Cylinder</li>
-                <li>Primary Use Case: Automotive Engineering, Research, Education</li>
+                <li><strong>Software Used</strong>: Fusion 360, SolidWorks</li>
+                <li><strong>Material Options</strong>: Aluminum, Cast Iron, Forged Steel</li>
+                <li><strong>Manufacturing Techniques</strong>: CNC Machining, Casting, 3D Printing</li>
+                <li><strong>Engine Configuration</strong>: Inline Four-Cylinder</li>
+                <li><strong>Primary Use Case</strong>: Automotive Engineering, Research, Education</li>
             </ul>
         </div>
     </div>
@@ -351,64 +403,63 @@
             <span class="close">&times;</span>
 <img src="images/project 6/disk brake/Assembly_disc_Brake_2025-Feb-28_01-33-11AM-000_CustomizedView22537321632_png_alpha.png" alt="High-Performance Brake System">
 
-            <h3>🛠️ High-Performance Brake System – Engineering & Design Details</h3>
-            <p>📌 Project Overview</p>
+            <h3>High-Performance Disc Brake System</h3>
+            <h4>Project Overview</h4>
             <p>This high-performance brake system model, designed in Fusion 360, showcases a vented and drilled brake rotor paired with a multi-piston brake caliper. The model is engineered for real-world application, ensuring optimal heat dissipation, high braking efficiency, and structural durability. This design demonstrates expertise in mechanical design, motion simulation, and manufacturing feasibility.</p>
             
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Parametric 3D Modeling – Developed using Fusion 360 with precise detailing.</li>
-                <li>✔ Brake System Optimization – Designed for maximum performance and heat dissipation.</li>
-                <li>✔ Finite Element Analysis (FEA) – Evaluated stress distribution under high braking forces.</li>
-                <li>✔ Material Selection & Manufacturing Feasibility – Optimized for casting, CNC machining, and 3D printing.</li>
-                <li>✔ Surface Finish Simulation – Created realistic textures for metal and caliper coating.</li>
+                <li><strong>Parametric 3D Modeling</strong> – Developed using Fusion 360 with precise detailing.</li>
+                <li><strong>Brake System Optimization</strong> – Designed for maximum performance and heat dissipation.</li>
+                <li><strong>Finite Element Analysis (FEA)</strong> – Evaluated stress distribution under high braking forces.</li>
+                <li><strong>Material Selection & Manufacturing Feasibility</strong> – Optimized for casting, CNC machining, and 3D printing.</li>
+                <li><strong>Surface Finish Simulation</strong> – Created realistic textures for metal and caliper coating.</li>
             </ul>
     
-            <p>⚙️ Design Features</p>
+            <h4>Design Features</h4>
             <ul>
-                <li>Drilled & Vented Brake Disc – Enhances heat dissipation and reduces brake fade.</li>
-                <li>Multi-Piston Brake Caliper – Ensures even pressure distribution on brake pads.</li>
-                <li>High-Strength Material Simulation – Designed for aluminum, carbon-ceramic, and steel.</li>
-                <li>Tolerance & Fit Optimization – Ensured precise alignment with wheel hub assembly.</li>
-                <li>Lightweight & Performance Balance – Reduced unsprung weight while maintaining strength.</li>
+                <li><strong>Drilled & Vented Brake Disc</strong> – Enhances heat dissipation and reduces brake fade.</li>
+                <li><strong>Multi-Piston Brake Caliper</strong> – Ensures even pressure distribution on brake pads.</li>
+                <li><strong>High-Strength Material Simulation</strong> – Designed for aluminum, carbon-ceramic, and steel.</li>
+                <li><strong>Tolerance & Fit Optimization</strong> – Ensured precise alignment with wheel hub assembly.</li>
+                <li><strong>Lightweight & Performance Balance</strong> – Reduced unsprung weight while maintaining strength.</li>
             </ul>
     
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Heat Dissipation Efficiency – Required vented & drilled rotor design refinements.</li>
-                <li>❌ Material Strength & Weight Optimization – Balanced durability with lightweight materials.</li>
-                <li>❌ Complex Geometry for Manufacturing – Adjusted design for machining & casting feasibility.</li>
+                <li><strong>Heat Dissipation Efficiency</strong> – Required vented & drilled rotor design refinements.</li>
+                <li><strong>Material Strength & Weight Optimization</strong> – Balanced durability with lightweight materials.</li>
+                <li><strong>Complex Geometry for Manufacturing</strong> – Adjusted design for machining & casting feasibility.</li>
             </ul>
     
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Refined Airflow & Cooling Design – Improved vented rotor efficiency.</li>
-                <li>✔ Structural Reinforcement for High Load Conditions – Ensured reliability under extreme braking forces.</li>
-                <li>✔ Enhanced Manufacturing Adaptability – Optimized for 3D printing, CNC machining, and casting.</li>
+                <li><strong>Refined Airflow & Cooling Design</strong> – Improved vented rotor efficiency.</li>
+                <li><strong>Structural Reinforcement for High Load Conditions</strong> – Ensured reliability under extreme braking forces.</li>
+                <li><strong>Enhanced Manufacturing Adaptability</strong> – Optimized for 3D printing, CNC machining, and casting.</li>
             </ul>
     
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Eco-Friendly Material Considerations – Explored recyclable aluminum & composite materials.</li>
-                <li>🛠️ Optimized for Additive Manufacturing – Designed for prototyping via 3D printing.</li>
-                <li>👥 Performance & Safety-Centric Engineering – Prioritized real-world usability & testing feasibility.</li>
+                <li><strong>Eco-Friendly Material Considerations</strong> – Explored recyclable aluminum & composite materials.</li>
+                <li><strong>Optimized for Additive Manufacturing</strong> – Designed for prototyping via 3D printing.</li>
+                <li><strong>Performance & Safety-Centric Engineering</strong> – Prioritized real-world usability & testing feasibility.</li>
             </ul>
     
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Software Used: Fusion 360, SolidWorks</li>
-                <li>Material Options: Carbon-Ceramic, Cast Iron, Aluminum Alloy</li>
-                <li>Manufacturing Techniques: CNC Machining, Sand Casting, 3D Printing</li>
-                <li>Brake Disc Type: Vented & Drilled Performance Rotor</li>
-                <li>Primary Use Case: Automotive Engineering, High-Performance Vehicles, Research & Prototyping</li>
+                <li><strong>Software Used</strong>: Fusion 360, SolidWorks</li>
+                <li><strong>Material Options</strong>: Carbon-Ceramic, Cast Iron, Aluminum Alloy</li>
+                <li><strong>Manufacturing Techniques</strong>: CNC Machining, Sand Casting, 3D Printing</li>
+                <li><strong>Brake Disc Type</strong>: Vented & Drilled Performance Rotor</li>
+                <li><strong>Primary Use Case</strong>: Automotive Engineering, High-Performance Vehicles, Research & Prototyping</li>
             </ul>
     
-            <p>🏁 Best Material Choices for Your Design</p>
+            <h4>Material Options by Application</h4>
             <ul>
-                <li>For Performance Cars: 🔩 Carbon-Ceramic Rotor + Aluminum Caliper</li>
-                <li>For Standard Cars: 🛠️ Cast Iron Rotor + Aluminum/Cast Iron Caliper</li>
-                <li>For Racing & Lightweight Builds: 🏎️ Carbon-Ceramic Rotor + Magnesium/Carbon Fiber Caliper</li>
+                <li><strong>For Performance Cars</strong>: Carbon-Ceramic Rotor + Aluminum Caliper</li>
+                <li><strong>For Standard Cars</strong>: Cast Iron Rotor + Aluminum/Cast Iron Caliper</li>
+                <li><strong>For Racing & Lightweight Builds</strong>: Carbon-Ceramic Rotor + Magnesium/Carbon Fiber Caliper</li>
             </ul>
         </div>
     </div>
@@ -417,57 +468,62 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <img src="images/project 6/Lamp_post.png" alt="Vintage Street Lamp Post">
-            <h3>Vintage Street Lamp Post – Design & Engineering Showcase</h3>
-            <p>📌 Project Overview</p>
+            <h3>Vintage Street Lamp Post</h3>
+            <h4>Project Overview</h4>
             <p>This vintage-style street lamp post is a 3D CAD prototype, showcasing aesthetic design, structural integrity, and assembly principles. The design combines classical ornamental features with modern CAD modeling, making it an ideal project for architectural lighting and urban infrastructure applications.</p>
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ Parametric 3D CAD Modeling – Designed using Fusion 360, ensuring geometric precision and scalability.</li>
-                <li>✔ Assembly & Motion Study – Simulated lamp mounting, disassembly, and maintenance feasibility.</li>
-                <li>✔ Material Selection & Optimization – Designed with materials like cast iron, aluminum, or stainless steel for durability and corrosion resistance.</li>
-                <li>✔ Structural Load Analysis – Evaluated wind resistance, weight distribution, and stability.</li>
-                <li>✔ Manufacturing & Fabrication Considerations – Optimized for casting, welding, and machining processes.</li>
-                <li>✔ Photorealistic Rendering – Used Fusion 360’s rendering engine to create a high-quality visualization.</li>
+                <li><strong>Parametric 3D CAD Modeling</strong> – Designed using Fusion 360, ensuring geometric precision and scalability.</li>
+                <li><strong>Assembly & Motion Study</strong> – Simulated lamp mounting, disassembly, and maintenance feasibility.</li>
+                <li><strong>Material Selection & Optimization</strong> – Designed with materials like cast iron, aluminum, or stainless steel for durability and corrosion resistance.</li>
+                <li><strong>Structural Load Analysis</strong> – Evaluated wind resistance, weight distribution, and stability.</li>
+                <li><strong>Manufacturing & Fabrication Considerations</strong> – Optimized for casting, welding, and machining processes.</li>
+                <li><strong>Photorealistic Rendering</strong> – Used Fusion 360’s rendering engine to create a high-quality visualization.</li>
             </ul>
-            <p>⚙️ Design Features & Engineering Details</p>
-            <ol>
-                <li>1️⃣ Structural Design & Aesthetics</li>
-                <li>✔ Victorian-Inspired Curved Arms – Adds a decorative and elegant appeal.</li>
-                <li>✔ Dual Lamp Configuration – Provides a wider light spread for streets and walkways.</li>
-                <li>✔ Base with Mounting Holes – Ensures a stable foundation for installation.</li>
-                <li>2️⃣ Lamp Fixture & Mounting System</li>
-                <li>✔ Detachable Lamp Housing – Allows for easy bulb replacement and maintenance.</li>
-                <li>✔ Threaded or Clamped Mounting – Secures the lamp shades to prevent movement due to wind loads.</li>
-                <li>✔ Wire Routing & Protection – Concealed pathways for safe electrical connections.</li>
-                <li>3️⃣ Material & Durability Considerations</li>
-                <li>✔ Weather-Resistant Materials – Designed using cast iron or aluminum for outdoor durability.</li>
-                <li>✔ Powder-Coated Finish – Protects against rust and environmental wear.</li>
-                <li>✔ Tempered Glass Lamp Covers – Prevents breakage and enhances light diffusion.</li>
-            </ol>
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Design Features & Engineering Details</h4>
+            <h5>Structural Design & Aesthetics</h5>
             <ul>
-                <li>❌ Balancing Aesthetics & Functionality – Ensuring visual appeal while maintaining mechanical strength.</li>
-                <li>❌ Weight & Structural Stability – Required FEA analysis to optimize material usage.</li>
-                <li>❌ Manufacturing Complexity – Needed to simplify ornate details for easier production.</li>
+                <li><strong>Victorian-Inspired Curved Arms</strong> – Adds a decorative and elegant appeal.</li>
+                <li><strong>Dual Lamp Configuration</strong> – Provides a wider light spread for streets and walkways.</li>
+                <li><strong>Base with Mounting Holes</strong> – Ensures a stable foundation for installation.</li>
             </ul>
-            <p>✅ Key Learnings</p>
+            <h5>Lamp Fixture & Mounting System</h5>
             <ul>
-                <li>✔ Optimized Support Brackets – Enhanced structural rigidity without excessive weight.</li>
-                <li>✔ Modular Lamp Design – Enabled easy replacement and upgrades.</li>
-                <li>✔ Efficient Assembly Process – Reduced complexity in installation using pre-fabricated parts.</li>
+                <li><strong>Detachable Lamp Housing</strong> – Allows for easy bulb replacement and maintenance.</li>
+                <li><strong>Threaded or Clamped Mounting</strong> – Secures the lamp shades to prevent movement due to wind loads.</li>
+                <li><strong>Wire Routing & Protection</strong> – Concealed pathways for safe electrical connections.</li>
             </ul>
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h5>Material & Durability Considerations</h5>
             <ul>
-                <li>♻ Eco-Friendly Approach – Considered solar-powered LED integration for energy efficiency.</li>
-                <li>🛠 Optimized for Manufacturing – Designed with cost-effective fabrication techniques.</li>
-                <li>👥 User-Centric Design – Ensured ease of maintenance and long-term durability.</li>
+                <li><strong>Weather-Resistant Materials</strong> – Designed using cast iron or aluminum for outdoor durability.</li>
+                <li><strong>Powder-Coated Finish</strong> – Protects against rust and environmental wear.</li>
+                <li><strong>Tempered Glass Lamp Covers</strong> – Prevents breakage and enhances light diffusion.</li>
             </ul>
-            <p>📌 Prototype Specifications</p>
-            <p>Technology Used: Fusion 360 CAD Modeling, Assembly, & Rendering</p>
-            <p>Material: Cast Iron / Aluminum Alloy (Powder-Coated for Corrosion Resistance)</p>
-            <p>Mechanism: Bolt-Fixed Dual Lamp Housing with Decorative Structural Support</p>
-            <p>Additional Features: Weather Protection, Energy Efficiency, and Aesthetic Enhancements</p>
+            <h4>Challenges</h4>
+            <ul>
+                <li><strong>Balancing Aesthetics & Functionality</strong> – Ensuring visual appeal while maintaining mechanical strength.</li>
+                <li><strong>Weight & Structural Stability</strong> – Required FEA analysis to optimize material usage.</li>
+                <li><strong>Manufacturing Complexity</strong> – Needed to simplify ornate details for easier production.</li>
+            </ul>
+            <h4>Key Learnings</h4>
+            <ul>
+                <li><strong>Optimized Support Brackets</strong> – Enhanced structural rigidity without excessive weight.</li>
+                <li><strong>Modular Lamp Design</strong> – Enabled easy replacement and upgrades.</li>
+                <li><strong>Efficient Assembly Process</strong> – Reduced complexity in installation using pre-fabricated parts.</li>
+            </ul>
+            <h4>Engineering Ethics & Sustainable Design</h4>
+            <ul>
+                <li><strong>Eco-Friendly Approach</strong> – Considered solar-powered LED integration for energy efficiency.</li>
+                <li><strong>Optimized for Manufacturing</strong> – Designed with cost-effective fabrication techniques.</li>
+                <li><strong>User-Centric Design</strong> – Ensured ease of maintenance and long-term durability.</li>
+            </ul>
+            <h4>Prototype Specifications</h4>
+            <ul>
+                <li><strong>Technology Used</strong>: Fusion 360 CAD Modeling, Assembly, & Rendering</li>
+                <li><strong>Material</strong>: Cast Iron / Aluminum Alloy (Powder-Coated for Corrosion Resistance)</li>
+                <li><strong>Mechanism</strong>: Bolt-Fixed Dual Lamp Housing with Decorative Structural Support</li>
+                <li><strong>Additional Features</strong>: Weather Protection, Energy Efficiency, and Aesthetic Enhancements</li>
+            </ul>
         </div>
     </div>
 
@@ -476,59 +532,61 @@
             <span class="close">&times;</span>
             <video src="images/project 6/Scissor lift/assembly hydrolic cylinder1.mp4" controls autoplay loop muted playsinline></video>
             <img src="images/project 6/Scissor lift/1.jpg" alt="Scissor Lift Table">
-            <h3>🛗 Scissor Lift Table – Design & Engineering Showcase</h3>
-            <p>📌 Project Overview</p>
+            <h3>Hydraulic Scissor Lift Table</h3>
+            <h4>Project Overview</h4>
             <p>This hydraulic scissor lift table is a 3D CAD assembly demonstrating a two-stage scissor linkage driven by a single hydraulic cylinder. The design converts the cylinder's linear stroke into vertical lift of the platform, keeping the top deck level throughout its travel. The project showcases linkage kinematics, actuator placement, and assembly design for material-handling and workshop lifting applications.</p>
 
-            <p>🛠️ Skills Demonstrated</p>
+            <h4>Skills Demonstrated</h4>
             <ul>
-                <li>✔ 3D CAD Modeling & Assembly – Modelled the platform, base frame, scissor arms, pins, and hydraulic cylinder as a fully constrained assembly.</li>
-                <li>✔ Linkage Kinematics – Designed a double-stage scissor mechanism to achieve greater lift height from a compact base.</li>
-                <li>✔ Motion Study – Animated the hydraulic cylinder stroke to verify the full raise-and-lower range of motion without interference.</li>
-                <li>✔ Actuator Integration – Positioned the hydraulic cylinder diagonally between the linkage cross-members to drive the lift.</li>
-                <li>✔ Design for Manufacturing (DFM) – Used simple plate, bar, and pin components suited to cutting, drilling, and welding.</li>
-                <li>✔ Photorealistic Rendering – Produced rendered visuals to present the design.</li>
+                <li><strong>3D CAD Modeling & Assembly</strong> – Modelled the platform, base frame, scissor arms, pins, and hydraulic cylinder as a fully constrained assembly.</li>
+                <li><strong>Linkage Kinematics</strong> – Designed a double-stage scissor mechanism to achieve greater lift height from a compact base.</li>
+                <li><strong>Motion Study</strong> – Animated the hydraulic cylinder stroke to verify the full raise-and-lower range of motion without interference.</li>
+                <li><strong>Actuator Integration</strong> – Positioned the hydraulic cylinder diagonally between the linkage cross-members to drive the lift.</li>
+                <li><strong>Design for Manufacturing (DFM)</strong> – Used simple plate, bar, and pin components suited to cutting, drilling, and welding.</li>
+                <li><strong>Photorealistic Rendering</strong> – Produced rendered visuals to present the design.</li>
             </ul>
 
-            <p>⚙️ Design Features</p>
+            <h4>Design Features</h4>
             <ul>
-                <li>Two-Stage Scissor Linkage – Stacked cross-arm pairs multiply vertical travel while keeping the collapsed height low.</li>
-                <li>Hydraulic Cylinder Drive – A single diagonally mounted cylinder raises and lowers the platform.</li>
-                <li>Slotted Guide Frames – Slots in the top platform and base frame let the sliding ends of the arms travel as the lift extends.</li>
-                <li>Pinned Pivot Joints – Centre and end pivots connect the arms while allowing free rotation.</li>
-                <li>Level Platform – The symmetrical linkage keeps the top deck parallel to the base at every height.</li>
+                <li><strong>Two-Stage Scissor Linkage</strong> – Stacked cross-arm pairs multiply vertical travel while keeping the collapsed height low.</li>
+                <li><strong>Hydraulic Cylinder Drive</strong> – A single diagonally mounted cylinder raises and lowers the platform.</li>
+                <li><strong>Slotted Guide Frames</strong> – Slots in the top platform and base frame let the sliding ends of the arms travel as the lift extends.</li>
+                <li><strong>Pinned Pivot Joints</strong> – Centre and end pivots connect the arms while allowing free rotation.</li>
+                <li><strong>Level Platform</strong> – The symmetrical linkage keeps the top deck parallel to the base at every height.</li>
             </ul>
 
-            <p>💡 Challenges & Learnings</p>
-            <p>🔴 Challenges Faced</p>
+            <h4>Challenges</h4>
             <ul>
-                <li>❌ Cylinder Placement – Finding a mounting geometry that gives enough stroke and leverage, particularly when starting from the fully lowered position.</li>
-                <li>❌ Assembly Constraints – Defining pivot and slider constraints so the multi-stage linkage moved correctly in the motion study.</li>
-                <li>❌ Clearance & Interference – Making sure the arms, cylinder, and cross-bars did not collide anywhere in the range of motion.</li>
+                <li><strong>Cylinder Placement</strong> – Finding a mounting geometry that gives enough stroke and leverage, particularly when starting from the fully lowered position.</li>
+                <li><strong>Assembly Constraints</strong> – Defining pivot and slider constraints so the multi-stage linkage moved correctly in the motion study.</li>
+                <li><strong>Clearance & Interference</strong> – Making sure the arms, cylinder, and cross-bars did not collide anywhere in the range of motion.</li>
             </ul>
 
-            <p>✅ Key Learnings</p>
+            <h4>Key Learnings</h4>
             <ul>
-                <li>✔ Scissor Mechanism Behaviour – Understood how arm length, stage count, and actuator position affect lift height and required force.</li>
-                <li>✔ Motion Simulation – Used animation to validate mechanism behaviour before committing to detailed design.</li>
-                <li>✔ Assembly Planning – Structured the model into sub-assemblies for easier modification and manufacture.</li>
+                <li><strong>Scissor Mechanism Behaviour</strong> – Understood how arm length, stage count, and actuator position affect lift height and required force.</li>
+                <li><strong>Motion Simulation</strong> – Used animation to validate mechanism behaviour before committing to detailed design.</li>
+                <li><strong>Assembly Planning</strong> – Structured the model into sub-assemblies for easier modification and manufacture.</li>
             </ul>
 
-            <p>🌱 Engineering Ethics & Sustainable Design</p>
+            <h4>Engineering Ethics & Sustainable Design</h4>
             <ul>
-                <li>♻ Material Efficiency – Standard steel sections and plate keep fabrication simple and reduce waste.</li>
-                <li>🛠️ Maintainability – Pinned joints allow arms and the cylinder to be removed and replaced.</li>
-                <li>👥 Operator Safety – Considered stable base footprint and controlled lowering for safe use.</li>
+                <li><strong>Material Efficiency</strong> – Standard steel sections and plate keep fabrication simple and reduce waste.</li>
+                <li><strong>Maintainability</strong> – Pinned joints allow arms and the cylinder to be removed and replaced.</li>
+                <li><strong>Operator Safety</strong> – Considered stable base footprint and controlled lowering for safe use.</li>
             </ul>
 
-            <p>📌 Prototype Specifications</p>
+            <h4>Prototype Specifications</h4>
             <ul>
-                <li>Technology Used: 3D CAD Modeling, Assembly, Motion Study & Rendering</li>
-                <li>Material: Mild Steel (frames and arms), Hardened Steel (pivot pins)</li>
-                <li>Mechanism: Two-Stage Scissor Linkage with Single Hydraulic Cylinder Actuation</li>
-                <li>Primary Use Case: Material Handling, Workshop Lifting, Load Positioning</li>
+                <li><strong>Technology Used</strong>: 3D CAD Modeling, Assembly, Motion Study & Rendering</li>
+                <li><strong>Material</strong>: Mild Steel (frames and arms), Hardened Steel (pivot pins)</li>
+                <li><strong>Mechanism</strong>: Two-Stage Scissor Linkage with Single Hydraulic Cylinder Actuation</li>
+                <li><strong>Primary Use Case</strong>: Material Handling, Workshop Lifting, Load Positioning</li>
             </ul>
         </div>
     </div>
+
+    <button class="back-to-top" type="button">Back to Top</button>
+    <script src="script.js?v=4"></script>
 </body>
 </html>
