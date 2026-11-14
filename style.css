@@ -1984,3 +1984,49 @@ a.experience .experience-dates {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===== About section photos: show whole photos (no cropping), button underneath ===== */
+#about .about-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px auto 0;
+    max-width: 1000px;
+}
+
+#about .about-photos img {
+    flex: 1 1 360px;
+    max-width: 480px;
+    width: 100%;
+    height: auto;          /* keep each photo's own shape */
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+#about .about-actions {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px;
+}
+
+#about .about-actions .learn-more-btn {
+    margin: 0;
+    padding: 12px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 999px;
+}
+
+/* Pop-up photos are portrait (3:4): frame them at the same ratio so nothing is cut off */
+#about-modal .image-gallery img {
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    #about-modal .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
