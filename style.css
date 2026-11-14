@@ -1255,3 +1255,101 @@ body {
         font-size: 28px;
     }
 }
+
+/* ===== Mobile fixes ===== */
+
+/* Padding/borders count inside an element's width, so width: 100% never overflows the screen */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Safety net: never allow sideways scrolling */
+html,
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        padding: 0 16px;
+    }
+
+    /* Home: let the section grow with its content instead of clipping it */
+    #home {
+        height: auto;
+        min-height: 100vh;
+        padding: 90px 0 30px;
+        align-items: stretch;
+    }
+
+    #home h1 {
+        font-size: 34px;
+        margin-top: 0;
+    }
+
+    #home p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 16px;
+        width: 100%;
+    }
+
+    .home-content {
+        margin-top: 0;
+        gap: 24px;
+    }
+
+    .cv-download-btn {
+        margin: 10px 0;
+    }
+
+    /* Profile photo: full width, face visible */
+    .profile-picture {
+        width: 100%;
+        max-width: 380px;
+        height: 440px;
+        margin: 0 auto;
+        object-position: center top;
+        border-radius: 10px;
+    }
+
+    /* About */
+    .about-me-section {
+        width: 100%;
+        padding: 20px 12px;
+    }
+
+    .quote {
+        font-size: 21px;
+    }
+
+    .about-title {
+        font-size: 30px;
+    }
+
+    .text-container {
+        font-size: 16px;
+        padding: 0 4px 16px;
+    }
+
+    /* Back to Top: small round arrow button that doesn't cover text */
+    body .back-to-top {
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        bottom: 16px;
+        right: 16px;
+        border-radius: 50%;
+        font-size: 0;
+        opacity: 0.85;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    body .back-to-top::before {
+        content: "\2191";
+        font-size: 22px;
+        line-height: 44px;
+    }
+}
