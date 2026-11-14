@@ -1,0 +1,128 @@
+/* ===== Image lightbox (click a project image to view it large) ===== */
+
+/* Hint that gallery images can be clicked */
+.lightbox-enabled {
+    cursor: zoom-in;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lightbox-enabled:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 3000; /* above the nav bar and the project pop-ups */
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.92);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox-stage {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    display: flex;
+    /* "safe" keeps a zoomed image scrollable from its top-left edge */
+    align-items: safe center;
+    justify-content: safe center;
+    padding: 50px 70px 10px;
+}
+
+.lightbox-img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: zoom-in;
+    user-select: none;
+}
+
+/* Zoomed: show the image at its full original resolution and let it scroll */
+.lightbox.zoomed .lightbox-img {
+    max-width: none;
+    max-height: none;
+    cursor: zoom-out;
+}
+
+.lightbox-caption {
+    text-align: center;
+    padding: 10px 20px 16px;
+    font-size: 15px;
+    color: #ddd;
+}
+
+.lightbox-counter {
+    color: #999;
+    margin-left: 8px;
+}
+
+.lightbox-btn {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 26px;
+    line-height: 48px;
+    text-align: center;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.lightbox-btn:hover,
+.lightbox-btn:focus-visible {
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.lightbox-close {
+    top: 10px;
+    right: 14px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lightbox-prev {
+    left: 12px;
+}
+
+.lightbox-next {
+    right: 12px;
+}
+
+.lightbox.single .lightbox-prev,
+.lightbox.single .lightbox-next,
+.lightbox.single .lightbox-counter {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .lightbox-stage {
+        padding: 56px 8px 8px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        top: auto;
+        bottom: 8px;
+        transform: none;
+    }
+}

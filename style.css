@@ -15,7 +15,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/back.jpg');
+    background-image: url('images/back.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,11 +229,41 @@ h1 span {
     text-align: left;
 }
 
+/* Small "Download CV" button next to the welcome text */
+.cv-download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 8px;
+    padding: 6px 14px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    text-decoration: none;
+    vertical-align: middle;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cv-download-btn:hover,
+.cv-download-btn:focus-visible {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+.cv-download-btn i {
+    font-size: 14px;
+    margin: 0;
+}
+
 .profile-picture {
     width: 350px;
     height: 500px;
     object-fit: cover;
-    border-radius: 2;
+    border-radius: 2px;
     margin-right: 20px;
 }
 
@@ -254,7 +284,7 @@ h1 span {
 
 #about {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,13 +292,13 @@ h1 span {
     background-position: center;
 }
 
+/* Quote sits in the normal flow, so a longer quote pushes the content down instead of overlapping it */
 .quote-container {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    padding: 20px;
+    padding: 20px 20px 0;
     z-index: 1;
 }
 
@@ -308,10 +338,11 @@ h1 span {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.);
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height: 90vh;
+    min-height: 90vh;
+    box-sizing: border-box;
 }
 
 .overlay {
@@ -325,9 +356,14 @@ h1 span {
 }
 
 .text-container {
-    padding: 20px;
+    padding: 0 20px 20px;
     position: relative;
-    margin-top: 100px; /* reduced margin-top to 100px */
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .about-title {
@@ -364,6 +400,14 @@ i {
     margin: 10px;
 }
 
+.icon-container a {
+    color: #fff;
+}
+
+.icon-container a:hover {
+    color: #4CAF50;
+}
+
 .learn-more-btn {
     background-color: #4CAF50;
     color: #fff;
@@ -382,7 +426,7 @@ i {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2000; /* above the fixed nav (z-index 1000) */
     left: 0;
     top: 0;
     width: 100%;
@@ -391,30 +435,19 @@ i {
 }
 
 .modal-content {
+    box-sizing: border-box;
     background-color: #fefefe;
     padding: 20px;
     border: 1px solid #888;
     width: 90%;
     height: 90%;
     color: #000;
-    overflow: auto;
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    max-height: 100vh;
+    justify-content: flex-start;
+    align-items: stretch;
     overflow-y: auto;
-    scrollbar-width: none;
-    margin: 20px auto;
-}
-
-.modal-content::-webkit-scrollbar {
-    display: none;
-}
-.text-container {
-    padding: 20px;
-    position: relative;
-    margin-top: 150px; /* increased margin-top to 150px */
+    margin: 5vh auto;
 }
 
 /* added media queries to make the layout more responsive */
@@ -577,79 +610,18 @@ i {
     }
   }
 
-/* Add this code to your CSS file */
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 90%;
-    height: 90%;
-    color: #000;
-    overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: left;
-    max-height: 100vh;
-    overflow-y: auto ;
-    scrollbar-width: none;
-    margin: 20px auto;
-}
-
-.modal-content::-webkit-scrollbar {
-    display: none;
-}
-
-.close {
-    color: #000;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.learn-more-btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.learn-more-btn:hover {
-    background-color: #3e8e41;
-}
-
 #experience {
     padding: 20px;
 }
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
 }
 
 .experience {
+    cursor: pointer;
     background-color: hsla(84, 44%, 60%, 0.525);
     padding: 20px;
     border: 1px solid #ddd;
@@ -674,6 +646,20 @@ i {
 
 .experience-info p {
     margin-bottom: 20px;
+}
+.image-container {
+    display: flex;
+    justify-content: center; /* Aligns content in center */
+    gap: 10px; /* Space between images/videos */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.image-container img,
+.image-container video {
+    width: 30%; /* Adjust size for all elements */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures uniform appearance */
+    border-radius: 10px; /* Optional: Adds rounded corners */
 }
 .back-btn {
     background-color: #4CAF50;
@@ -1053,7 +1039,7 @@ button[type="submit"]:hover {
         background-size: cover;
     }
     .contact-info {
-        padding: 10 px;
+        padding: 10px;
     }
     .contact-form {
         padding: 10px;
@@ -1103,16 +1089,6 @@ body {
 
 .cta-button:hover {
     background-color: #45a049;
-}
-
-.top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    background-color: rgba(68, 68, 68, 0.9);
-    transition: background-color 0.3s ease;
 }
 
 .top-nav.scrolled {
@@ -1173,4 +1149,109 @@ body {
 .skill-icon {
     font-size: 40px;
     margin-bottom: 10px;
+}
+/* ===== Uniform project image galleries (projects 1-5) =====
+   Every picture sits in an identical 4:3 tile. Images are scaled to fit
+   (not cropped) so diagrams and graphs stay fully visible. */
+.project-section .project1-grid,
+.project-section .project2-grid,
+.project-section .project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    padding: 0;
+    margin: 20px 0;
+    background: none;
+}
+
+.project-section .project1-box,
+.project-section .project2-box {
+    max-width: none;
+    padding: 0;
+    background: none;
+    overflow: visible;
+}
+
+.project-section .project1-grid img,
+.project-section .project2-grid img,
+.project-section .project-images img,
+.project-section .project-images video {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 560px) {
+    .project-section .project1-grid,
+    .project-section .project2-grid,
+    .project-section .project-images {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Experience detail pages: text on a solid card for readability ===== */
+.experience-detail {
+    box-sizing: border-box;
+    max-width: 960px;
+    margin: 110px auto 40px;
+    padding: 36px 44px;
+    background-color: rgba(28, 28, 28, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+    overflow-wrap: break-word;
+}
+
+.experience-detail h1 {
+    margin: 0 0 6px;
+    font-size: 36px;
+    color: #fff;
+}
+
+/* Company and dates line under the job title */
+.experience-detail h1 + p {
+    margin-top: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.experience-detail h2 {
+    margin: 32px 0 12px;
+    padding-bottom: 6px;
+    font-size: 22px;
+    color: #fff;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.experience-detail p,
+.experience-detail li {
+    color: #e6e6e6;
+    font-size: 17px;
+}
+
+.experience-detail li {
+    margin-bottom: 8px;
+}
+
+.experience-detail .back-btn {
+    margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+    .experience-detail {
+        margin-top: 90px;
+        padding: 22px 18px;
+    }
+
+    .experience-detail h1 {
+        font-size: 28px;
+    }
 }
