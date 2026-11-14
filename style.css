@@ -212,7 +212,7 @@ h1 span {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    filter: opacity(0.5);
+    filter: opacity(0.3);
 }
 
 .home-content {
@@ -1594,4 +1594,11 @@ body {
     .skills-title {
         font-size: 28px;
     }
+}
+
+/* Keep the menu on the right even when the name block is not present (home page) */
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
