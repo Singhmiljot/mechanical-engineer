@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Miljot Singh Gambhir, Mechanical Design Engineer: CAD modelling, technical drawings and FEA/CFD-driven product development across oil &amp; gas, automotive and medical sectors.">
+    <meta name="author" content="Miljot Singh Gambhir">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Miljot Singh Gambhir - Mechanical Design Engineer">
+    <meta property="og:description" content="Portfolio of Miljot Singh Gambhir, Mechanical Design Engineer: CAD modelling, technical drawings and FEA/CFD-driven product development across oil &amp; gas, automotive and medical sectors.">
+    <meta property="og:url" content="https://singhmiljot.github.io/mechanical-engineer/">
+    <meta property="og:image" content="https://singhmiljot.github.io/mechanical-engineer/images/og-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <title>Miljot Singh Gambhir - Mechanical Design Engineer</title>
-    <link rel="stylesheet" href="style.css?v=5">
+    <link rel="stylesheet" href="style.css?v=7">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
@@ -60,8 +72,8 @@
 
         <main>
             <section id="home">
-                <video autoplay loop muted playsinline>
-                    <source src="images/homeback.mp4" type="video/mp4">
+                <video class="bg-video" loop muted playsinline aria-hidden="true">
+                    <source data-src="images/homeback.mp4" type="video/mp4">
                 </video>
                 <div class="home-content">
                     <div class="home-text">
@@ -86,7 +98,7 @@
 
 <!-- About section -->
 <div id="about">
-  <video src="images/About/aboutback.mp4" autoplay loop muted playsinline></video>
+  <video class="bg-video" data-src="images/About/aboutback.mp4" loop muted playsinline aria-hidden="true"></video>
   <div class="about-me-section">
     <div class="overlay"></div>
       <div class="quote-container">
@@ -110,35 +122,42 @@
 </div>
 
 <!-- The about modal window -->
-<div class="modal" id="about-modal" style="display: none;">
+<div class="modal about-modal" id="about-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="about-modal-title">
   <div class="modal-content">
-    <span id="close-about" class="close">&times;</span>
-    <h2>About Me</h2>
-    <p>As a Mechanical Design Engineer, I thrive on transforming complex ideas into tangible solutions that meet real-world demands. With a strong foundation in CAD, FEA, and hands-on product development, I specialise in creating 3D mechanical systems and components that tackle challenges across industries, from oil and gas and industrial manufacturing to automotive and medical technology. My passion lies in the fine balance between functionality and human-centred design, ensuring every solution not only performs but also enhances user experience.</p>
-    <p>I believe in the power of collaboration, continuously learning, and pushing the boundaries of engineering. Whether it’s designing bespoke machinery for hazardous environments or working alongside teams to develop and refine innovative systems, my approach is rooted in technical precision and creative problem-solving. Over the years, I have honed my skills through diverse projects, ranging from designing safety-critical mechanical systems to leading teams in the development of high-performance prototypes. My expertise spans several areas:</p>
+    <span id="close-about" class="close" role="button" tabindex="0" aria-label="Close">&times;</span>
+    <h2 id="about-modal-title">About Me</h2>
+    <p class="about-lead">I'm a Mechanical Design Engineer based in the United Kingdom, currently working as a CAD Design Engineer / Draughtsperson at ABTECH, where I produce technical drawings and CAD documentation for hazardous-area electrical enclosures used in oil and gas and heavy industry.</p>
+    <p>I hold an MSc in Advanced Mechanical Engineering from the University of Sheffield and a BTech in Mechanical Engineering (Automobile) from Dehradun Institute of Technology. My work combines CAD modelling, precision drawings and FEA/CFD analysis to turn requirements into robust, manufacturable designs.</p>
 
-      <ul>
-        <li>CAD & FEA: My proficiency in CAD tools and Finite Element Analysis allows me to create robust designs that are not only efficient but also safe under varying operational conditions. I’ve employed these skills in sectors requiring extreme precision, such as automotive technology, renewable energy, and hazardous-area equipment for the oil and gas industry.</li>
-        <li>Human-Centred Engineering: I hold a deep conviction that engineering should enhance the human experience. Every project I undertake is user-focused, ensuring that the end design seamlessly integrates into the user’s workflow or experience. This philosophy has been instrumental in developing systems that are as intuitive as they are innovative.</li>
-        <li>Cross-Industry Expertise: My career has spanned oil and gas, electric vehicles, medical devices, commercial power and data systems, and intellectual property analysis. These experiences have equipped me with the ability to navigate complex challenges, ensuring every solution is tailored to the specific needs of the industry and its end users.</li>
-        <li>Leadership & Collaboration: I enjoy working closely with interdisciplinary teams, driving projects forward from concept to implementation. My leadership has been vital in delivering on-time solutions, whether working as part of a team or independently driving project phases.</li>
-      </ul>
+    <h3>Career at a glance</h3>
+    <ul class="about-timeline">
+      <li><span class="tl-date">2025 – Present</span><span class="tl-text"><strong>ABTECH</strong> · CAD Design Engineer / Draughtsperson (hazardous-area enclosures)</span></li>
+      <li><span class="tl-date">2025</span><span class="tl-text"><strong>CMD Ltd</strong> · CAD Design Engineer (power, data &amp; cable management)</span></li>
+      <li><span class="tl-date">2023 – 2024</span><span class="tl-text"><strong>University of Sheffield</strong> · MSc Advanced Mechanical Engineering (CFD wind turbine dissertation)</span></li>
+      <li><span class="tl-date">2022 – 2023</span><span class="tl-text"><strong>Clarivate</strong> · Service IP Operation Consultant (50+ patents evaluated)</span></li>
+      <li><span class="tl-date">2021</span><span class="tl-text"><strong>3Ding</strong> · Mechanical Design Engineer (medical syringe design &amp; prototyping)</span></li>
+      <li><span class="tl-date">2020</span><span class="tl-text"><strong>Ather Energy</strong> · Robotic Assembly Design Engineer (jigs, fixtures &amp; GD&amp;T)</span></li>
+    </ul>
 
-      <p>If you’re looking for an engineer who combines technical expertise with a passion for innovative, user-centred design, let’s connect and explore how we can bring your next project to life.</p>
-      <h3 style="margin-bottom: 5px;">Interests</h3>
-<ul style="margin-top: 0;">
-  <li>Reading</li>
-  <li>Music</li>
-  <li>Exploring</li>
-  <li>Outdoor activities</li>
-  <li>Mobile Photography</li>
-</ul>
-<div class="image-gallery">
-  <img src="images/About/pic1.jpg" alt="Photo 1" style="width: 30%; margin: 10px;">
-  <img src="images/About/pic2.jpg" alt="Photo 2" style="width: 30%; margin: 10px;">
-  <img src="images/About/pic3.jpg" alt="Photo 3" style="width: 30%; margin: 10px;">
-</div>
-</div>
+    <h3>What I bring</h3>
+    <ul class="about-strengths">
+      <li><strong>Drawings that build right first time:</strong> clear GA, detail and assembly drawings with GD&amp;T, tolerances and BOMs, prepared for manufacture and installation.</li>
+      <li><strong>Analysis-led design:</strong> FEA and CFD in ANSYS to check strength and performance before anything is made.</li>
+      <li><strong>Design for manufacture:</strong> DFM/DFA thinking from 3D printing and CNC prototypes through to fabricated and assembled products.</li>
+      <li><strong>Cross-industry perspective:</strong> oil and gas, electric vehicles, medical devices, commercial power systems and patent analysis.</li>
+      <li><strong>Team player:</strong> used to working with engineering, sales, QA and production teams to resolve queries and keep projects moving.</li>
+    </ul>
+
+    <p class="about-cta">If you're looking for a design engineer who can take a product from requirement to manufacturing-ready drawings, I'd be glad to hear from you. <a href="#contact" class="about-contact-link">Get in touch</a></p>
+
+    <h3>Outside work</h3>
+    <p class="about-interests">Reading · Music · Exploring new places · Outdoor activities · Mobile photography</p>
+    <div class="image-gallery">
+      <img src="images/About/pic1.jpg" alt="Personal photography by Miljot">
+      <img src="images/About/pic2.jpg" alt="Personal photography by Miljot">
+      <img src="images/About/pic3.jpg" alt="Personal photography by Miljot">
+    </div>
+  </div>
 </div>
 
 <!-- Skills Section -->
@@ -168,8 +187,8 @@
 <section id="education" class="education-section">
   <!-- Background Video -->
   <div class="video-background">
-    <video autoplay loop muted playsinline>
-      <source src="images/education/educationback.mp4" type="video/mp4">
+    <video class="bg-video" loop muted playsinline aria-hidden="true">
+      <source data-src="images/education/educationback.mp4" type="video/mp4">
     </video>
   </div>
 
@@ -275,41 +294,46 @@
     <section id="experience">
       <h2>Experience</h2>
       <div class="experience-grid">
-        <div class="experience" onclick="location.href='experience5.html'">
-          <div class="experience-image" style="background-image: url('images/Experience/abtech_logo.png'); background-color: #2b2b2b; background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-              <h3>ABTECH UK Ltd</h3>
-            </div>
+        <a class="experience" href="experience5.html" aria-label="ABTECH UK Ltd: CAD Design Engineer / Draughtsperson, Sep 2025 – Present">
+          <div class="experience-image" style="background-image: url('images/Experience/abtech_logo.png'); background-color: #2b2b2b;"></div>
+          <div class="experience-info">
+            <h3>ABTECH UK Ltd</h3>
+            <p class="experience-role">CAD Design Engineer / Draughtsperson</p>
+            <p class="experience-dates">Sep 2025 – Present</p>
           </div>
-        </div>
-        <div class="experience" onclick="location.href='experience4.html'">
-          <div class="experience-image" style="background-image: url('images/Experience/cmd.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-              <h3>CMD Ltd</h3>
-            </div>
+        </a>
+        <a class="experience" href="experience4.html" aria-label="CMD Ltd: CAD Design Engineer, Jul 2025 – Sep 2025">
+          <div class="experience-image" style="background-image: url('images/Experience/cmd.jpeg'); "></div>
+          <div class="experience-info">
+            <h3>CMD Ltd</h3>
+            <p class="experience-role">CAD Design Engineer</p>
+            <p class="experience-dates">Jul 2025 – Sep 2025</p>
           </div>
-        </div>
-        <div class="experience" onclick="location.href='experience1.html'">
-          <div class="experience-image" style="background-image: url('images/Experience/Clarivate_Logo.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-              <h3>Clarivate Analytics</h3>
-            </div>
+        </a>
+        <a class="experience" href="experience1.html" aria-label="Clarivate: Service IP Operation Consultant, Jan 2022 – Sep 2023">
+          <div class="experience-image" style="background-image: url('images/Experience/Clarivate_Logo.jpg'); "></div>
+          <div class="experience-info">
+            <h3>Clarivate</h3>
+            <p class="experience-role">Service IP Operation Consultant</p>
+            <p class="experience-dates">Jan 2022 – Sep 2023</p>
           </div>
-        </div>
-        <div class="experience" onclick="location.href='experience2.html'">
-          <div class="experience-image" style="background-image: url('images/Experience/3Ding.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-              <h3>3Ding</h3>
-            </div>
+        </a>
+        <a class="experience" href="experience2.html" aria-label="3Ding: Mechanical Design Engineer, Mar 2021 – Sep 2021">
+          <div class="experience-image" style="background-image: url('images/Experience/3Ding.webp'); "></div>
+          <div class="experience-info">
+            <h3>3Ding</h3>
+            <p class="experience-role">Mechanical Design Engineer</p>
+            <p class="experience-dates">Mar 2021 – Sep 2021</p>
           </div>
-        </div>
-        <div class="experience" onclick="location.href='experience3.html'">
-          <div class="experience-image" style="background-image: url('images/Experience/ather-logo-1.webp'); background-size: cover; background-repeat: no-repeat; background-position: center;">
-            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-              <h3>ATHER</h3>
-            </div>
+        </a>
+        <a class="experience" href="experience3.html" aria-label="Ather Energy: Robotic Assembly Design Engineer, May 2020 – Nov 2020">
+          <div class="experience-image" style="background-image: url('images/Experience/ather-logo-1.webp'); "></div>
+          <div class="experience-info">
+            <h3>Ather Energy</h3>
+            <p class="experience-role">Robotic Assembly Design Engineer</p>
+            <p class="experience-dates">May 2020 – Nov 2020</p>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -317,6 +341,32 @@
           <section id="projects">
     <h2>Projects</h2>
     <div class="project-grid">
+        <div class="project">
+            <div class="project4 project-image">
+                <div class="project-info">
+                    <h3>Optimising Horizontal Wind Turbine Design Concepts</h3>
+                    <a href="project4.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+          <div class="project-image" style="background-image: url('images/project 3/projback.jpeg');">
+              <div class="project-info">
+                  <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
+                  <a href="project3.html" class="project-link">
+                      <span>View Project</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M18 13l-5 5-5-5" />
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
         <div class="project">
             <div class="project-image" style="background-image: url('images/project 1/proj1back.jpeg');">
                 <div class="project-info">
@@ -344,23 +394,10 @@
             </div>
         </div>
         <div class="project">
-          <div class="project-image" style="background-image: url('images/project 3/projback.jpeg');">
-              <div class="project-info">
-                  <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
-                  <a href="project3.html" class="project-link">
-                      <span>View Project</span>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                          <path d="M18 13l-5 5-5-5" />
-                      </svg>
-                  </a>
-              </div>
-          </div>
-      </div>
-        <div class="project">
-            <div class="project4 project-image">
+            <div class="project-image" style="background-image: url('images/project 6/projback.jpg');">
                 <div class="project-info">
-                    <h3>Optimising Horizontal Wind Turbine Design Concepts</h3>
-                    <a href="project4.html" class="project-link">
+                    <h3>CAD Design Showcase: Mechanisms, Assemblies &amp; 3D-Printed Prototypes</h3>
+                    <a href="project6.html" class="project-link">
                         <span>View Project</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 13l-5 5-5-5" />
@@ -374,19 +411,6 @@
                 <div class="project-info">
                     <h3>Recreating the Classic: Mercedes-Benz SL 300 Design in Fusion 360</h3>
                     <a href="project5.html" class="project-link">
-                        <span>View Project</span>
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 13l-5 5-5-5" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-image" style="background-image: url('images/project 6/projback.jpg');">
-                <div class="project-info">
-                    <h3>CAD Design Showcase: Mechanisms, Assemblies &amp; 3D-Printed Prototypes</h3>
-                    <a href="project6.html" class="project-link">
                         <span>View Project</span>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M18 13l-5 5-5-5" />
@@ -432,8 +456,25 @@
             <button class="back-to-top" type="button">Back to Top</button>
 
         </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <strong>Miljot Singh Gambhir</strong>
+                <span>Mechanical Design Engineer · United Kingdom</span>
+            </div>
+            <nav class="footer-links" aria-label="Footer">
+                <a href="https://www.linkedin.com/in/miljotsinghgambhir/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                <a href="mailto:miljotsinghgambhir@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a>
+                <a href="Miljot_Singh_Gambhir.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines" aria-hidden="true"></i> CV</a>
+                <a href="index.html#contact"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contact</a>
+            </nav>
+        </div>
+        <p class="footer-copy">&copy; 2026 Miljot Singh Gambhir. All rights reserved.</p>
+    </footer>
+
     </div>
 
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=7"></script>
 </body>
 </html>

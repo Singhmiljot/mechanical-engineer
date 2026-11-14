@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!targetElement) return;
 
         e.preventDefault();
+        openModals.forEach(closeModal); // e.g. "Get in touch" inside the About pop-up
         showNav();
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -90,6 +91,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         close.addEventListener('click', function () {
             closeModal(modal);
+        });
+
+        // Keyboard: Enter or Space on the × closes the pop-up
+        close.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                closeModal(modal);
+            }
         });
 
         // Close when clicking the dark backdrop around the modal
@@ -137,6 +146,23 @@ document.addEventListener('DOMContentLoaded', function () {
     setupModal('learn-more-btn-about', 'about-modal', 'close-about');
     setupModal('learn-more-btn-bachelor', 'education-modal', 'close-bachelor');
     setupModal('learn-more-btn-master', 'education-modal-2', 'close-master');
+
+    // Background videos: only download them on larger screens (saves ~8 MB on phones)
+    const bgVideos = document.querySelectorAll('video.bg-video');
+    const wideScreen = window.matchMedia('(min-width: 769px)').matches;
+    const saveData = navigator.connection && navigator.connection.saveData;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (bgVideos.length && wideScreen && !saveData && !reduceMotion) {
+        bgVideos.forEach(video => {
+            if (video.dataset.src) video.src = video.dataset.src;
+            video.querySelectorAll('source[data-src]').forEach(source => {
+                source.src = source.dataset.src;
+            });
+            video.load();
+            const playing = video.play();
+            if (playing && playing.catch) playing.catch(() => {});
+        });
+    }
 
     // Initialize AOS if available
     if (typeof AOS !== 'undefined') {
